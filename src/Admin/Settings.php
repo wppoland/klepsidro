@@ -23,9 +23,12 @@ use Ticker\Service\CountdownService;
  */
 final class Settings implements HasHooks {
 
-	private const OPTION  = 'ticker_settings';
-	private const PAGE    = 'ticker-settings';
-	private const SECTION = 'ticker_general';
+	private const OPTION = 'ticker_settings';
+	private const PAGE   = 'ticker-settings';
+
+	private const SECTION_BEHAVIOUR  = 'ticker_behaviour';
+	private const SECTION_APPEARANCE = 'ticker_appearance';
+	private const SECTION_PLACEMENT  = 'ticker_placement';
 
 	/**
 	 * Register WordPress hooks.
@@ -121,8 +124,8 @@ final class Settings implements HasHooks {
 		);
 
 		add_settings_section(
-			self::SECTION,
-			__( 'Sale Countdown Timer', 'ticker' ),
+			self::SECTION_BEHAVIOUR,
+			__( 'When the countdown runs', 'ticker' ),
 			static function (): void {
 				echo '<div class="ticker-settings__intro">';
 				echo '<h2>' . esc_html__( 'Create urgency with a live countdown', 'ticker' ) . '</h2>';
@@ -131,27 +134,55 @@ final class Settings implements HasHooks {
 					'ticker',
 				) . '</p>';
 				echo '</div>';
+				echo '<p class="ticker-settings__section-note">' . esc_html__(
+					'Decide whether the timer shows and where its end time comes from.',
+					'ticker',
+				) . '</p>';
+			},
+			self::PAGE,
+		);
+
+		add_settings_section(
+			self::SECTION_APPEARANCE,
+			__( 'How it reads', 'ticker' ),
+			static function (): void {
+				echo '<p class="ticker-settings__section-note">' . esc_html__(
+					'Tune the wording and the level of detail shoppers see. Sensible defaults already work — change these only to match your store’s voice.',
+					'ticker',
+				) . '</p>';
+			},
+			self::PAGE,
+		);
+
+		add_settings_section(
+			self::SECTION_PLACEMENT,
+			__( 'Where it appears', 'ticker' ),
+			static function (): void {
+				echo '<p class="ticker-settings__section-note">' . esc_html__(
+					'Choose the spot on the single product page that fits your theme’s layout.',
+					'ticker',
+				) . '</p>';
 			},
 			self::PAGE,
 		);
 
 		$fields = array(
-			'enabled'         => __( 'Enable countdown', 'ticker' ),
-			'source'          => __( 'Countdown source', 'ticker' ),
-			'campaign_end'    => __( 'Campaign end date', 'ticker' ),
-			'heading'         => __( 'Heading', 'ticker' ),
-			'format'          => __( 'Time format', 'ticker' ),
-			'placement'       => __( 'Placement', 'ticker' ),
-			'expired_message' => __( 'Expired message', 'ticker' ),
+			'enabled'         => array( __( 'Enable countdown', 'ticker' ), self::SECTION_BEHAVIOUR ),
+			'source'          => array( __( 'Countdown source', 'ticker' ), self::SECTION_BEHAVIOUR ),
+			'campaign_end'    => array( __( 'Campaign end date', 'ticker' ), self::SECTION_BEHAVIOUR ),
+			'heading'         => array( __( 'Heading', 'ticker' ), self::SECTION_APPEARANCE ),
+			'format'          => array( __( 'Time format', 'ticker' ), self::SECTION_APPEARANCE ),
+			'expired_message' => array( __( 'Expired message', 'ticker' ), self::SECTION_APPEARANCE ),
+			'placement'       => array( __( 'Placement', 'ticker' ), self::SECTION_PLACEMENT ),
 		);
 
-		foreach ( $fields as $id => $label ) {
+		foreach ( $fields as $id => $field ) {
 			add_settings_field(
 				$id,
-				$label,
+				$field[0],
 				array( $this, 'render_' . $id ),
 				self::PAGE,
-				self::SECTION,
+				$field[1],
 			);
 		}
 	}
@@ -252,7 +283,19 @@ final class Settings implements HasHooks {
 				<option value="<?php echo esc_attr( $value ); ?>" <?php selected( $current, $value ); ?>><?php echo esc_html( $label ); ?></option>
 			<?php endforeach; ?>
 		</select>
-		<p class="description"><?php esc_html_e( 'How the remaining time is displayed. Compact hides seconds for a calmer look on long campaigns.', 'ticker' ); ?></p>
+		<p class="description"><?php esc_html_e( 'How the remaining time is displayed. Compact drops seconds for a calmer look on multi-day campaigns.', 'ticker' ); ?></p>
+		<p class="ticker-settings__example">
+			<span class="ticker-settings__example-label"><?php esc_html_e( 'Looks like:', 'ticker' ); ?></span>
+			<?php
+			$samples = array(
+				'dhms'    => '02 : 18 : 45 : 09',
+				'hms'     => '18 : 45 : 09',
+				'compact' => '18 : 45',
+			);
+			$sample  = $samples[ $current ] ?? $samples['dhms'];
+			?>
+			<code class="ticker-settings__sample"><?php echo esc_html( $sample ); ?></code>
+		</p>
 		<?php
 	}
 
@@ -299,6 +342,7 @@ final class Settings implements HasHooks {
 		?>
 		<div class="wrap ticker-settings">
 			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
+			<p class="ticker-settings__lede"><?php esc_html_e( 'A live sale countdown for your product pages. The defaults below work out of the box — adjust only what you need.', 'ticker' ); ?></p>
 			<form method="post" action="options.php">
 				<?php
 				settings_fields( self::PAGE );

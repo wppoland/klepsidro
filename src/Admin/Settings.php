@@ -177,12 +177,17 @@ final class Settings implements HasHooks {
 		);
 
 		foreach ( $fields as $id => $field ) {
+			// The enabled checkbox supplies its own wrapping <label>; the rest
+			// rely on WP wrapping the <th> title in <label for> via label_for.
+			$args = 'enabled' === $id ? array() : array( 'label_for' => 'ticker_' . $id );
+
 			add_settings_field(
 				$id,
 				$field[0],
 				array( $this, 'render_' . $id ),
 				self::PAGE,
 				$field[1],
+				$args,
 			);
 		}
 	}

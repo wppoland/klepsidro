@@ -122,6 +122,17 @@ final class CountdownService implements HasHooks {
 
 		$settings = $this->settings();
 
+		/**
+		 * Filter whether the countdown timer is active and should render.
+		 *
+		 * @param bool        $active   Whether the timer is active.
+		 * @param \WC_Product $product  The current product.
+		 * @param array       $settings Ticker settings.
+		 */
+		if ( ! apply_filters( 'ticker/active', true, $product, $settings ) ) {
+			return;
+		}
+
 		$end_ts = $this->resolve_end_timestamp( $product, $settings );
 
 		// Nothing to show: no countdown configured. Hide rather than render an

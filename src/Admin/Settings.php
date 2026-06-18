@@ -391,7 +391,7 @@ final class Settings implements HasHooks {
 			$campaign_end = '';
 		}
 
-		return array(
+		$sanitized = array(
 			'enabled'         => ! empty( $raw['enabled'] ),
 			'source'          => $source,
 			'campaign_end'    => $campaign_end,
@@ -400,5 +400,7 @@ final class Settings implements HasHooks {
 			'placement'       => $placement,
 			'expired_message' => sanitize_text_field( (string) ( $raw['expired_message'] ?? '' ) ),
 		);
+
+		return apply_filters( 'ticker_settings_sanitize', $sanitized, $raw );
 	}
 }

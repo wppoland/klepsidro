@@ -2,16 +2,16 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ticker - Sales Countdown Timer for WooCommerce 0.1.1\n"
+"Project-Id-Version: Ticker - Sales Countdown Timer for WooCommerce 0.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ticker\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-18T15:12:16+00:00\n"
+"POT-Creation-Date: 2026-06-20T06:44:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: ticker\n"
 
 #. Plugin Name of the plugin
@@ -157,7 +157,6 @@ msgstr ""
 
 #. translators: %s: the site timezone string, e.g. Europe/Warsaw or UTC+2.
 #: src/Admin/Settings.php:254
-#, php-format
 msgid "Interpreted in your site timezone (%s)."
 msgstr ""
 
@@ -194,33 +193,32 @@ msgstr ""
 msgid "A live sale countdown for your product pages. The defaults below work out of the box — adjust only what you need."
 msgstr ""
 
-#: templates/single-product/countdown.php:38
+#: templates/single-product/countdown.php:40
 msgid "Sale countdown"
 msgstr ""
 
 #. translators: %s is the remaining sale time, e.g. "2 hrs 5 min".
-#: templates/single-product/countdown.php:69
-#, php-format
+#: templates/single-product/countdown.php:74
 msgid "Sale ends in %s"
 msgstr ""
 
-#: templates/single-product/countdown.php:73
+#: templates/single-product/countdown.php:78
 msgid "Sale ends in"
 msgstr ""
 
-#: templates/single-product/countdown.php:77
+#: templates/single-product/countdown.php:82
 msgid "days"
 msgstr ""
 
-#: templates/single-product/countdown.php:82
+#: templates/single-product/countdown.php:87
 msgid "hrs"
 msgstr ""
 
-#: templates/single-product/countdown.php:87
+#: templates/single-product/countdown.php:92
 msgid "min"
 msgstr ""
 
-#: templates/single-product/countdown.php:92
+#: templates/single-product/countdown.php:97
 msgid "sec"
 msgstr ""
 

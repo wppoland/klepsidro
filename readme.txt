@@ -4,7 +4,7 @@ Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -79,6 +79,9 @@ Its two options are removed and no tables are left behind, since Ticker never cr
 Ticker does not connect to any external services. It resolves the countdown end time entirely on your own server from each product's WooCommerce "Sale price dates" or a store-wide campaign date you set, and its `assets/js/ticker.js` script only formats that time in the browser, with no requests to any third party. Your settings are stored in the `ticker_settings` and `ticker_db_version` options in your site's `wp_options` table; no custom tables are created and no data leaves your site.
 
 == Changelog ==
+
+= 0.1.2 =
+* Add `ticker/countdown_rendered` action and `data-ticker-product-id` on the countdown markup for PRO analytics.
 
 = 0.1.1 =
 * Add `ticker/end_timestamp` filter so PRO and custom code can override the resolved countdown end time.

@@ -164,10 +164,25 @@ final class CountdownService implements HasHooks {
 				'heading'         => (string) ( $settings['heading'] ?? '' ),
 				'expired_message' => $expired_message,
 				'now'             => time(),
+				'product_id'      => $product->get_id(),
 			),
 		);
 
-		echo ob_get_clean(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Output is escaped inside the template.
+		$output = (string) ob_get_clean();
+
+		if ( '' === $output ) {
+			return;
+		}
+
+		echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Output is escaped inside the template.
+
+		/**
+		 * Fires after a sale countdown is rendered on a single product page.
+		 *
+		 * @param \WC_Product          $product  The current product.
+		 * @param array<string, mixed> $settings Plugin settings.
+		 */
+		do_action( 'ticker/countdown_rendered', $product, $settings );
 	}
 
 	/**

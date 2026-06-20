@@ -7,6 +7,7 @@
  * @var string   $ticker_heading         Optional heading above the timer.
  * @var string   $ticker_expired_message Message shown when the sale has ended.
  * @var int      $ticker_now             Current server timestamp (UTC).
+ * @var int      $ticker_product_id      Current product ID.
  *
  * @package Ticker/Templates
  */
@@ -22,6 +23,7 @@ $ticker_format          = isset( $ticker_format ) ? (string) $ticker_format : 'd
 $ticker_heading         = isset( $ticker_heading ) ? (string) $ticker_heading : '';
 $ticker_expired_message = isset( $ticker_expired_message ) ? (string) $ticker_expired_message : '';
 $ticker_now             = isset( $ticker_now ) ? (int) $ticker_now : time();
+$ticker_product_id      = isset( $ticker_product_id ) ? (int) $ticker_product_id : 0;
 
 if ( null === $ticker_end_ts ) {
 	return;
@@ -41,6 +43,9 @@ $ticker_show_seconds = 'compact' !== $ticker_format;
 		data-ticker-end="<?php echo esc_attr( (string) $ticker_end_ts ); ?>"
 		data-ticker-format="<?php echo esc_attr( $ticker_format ); ?>"
 		data-ticker-expired-text="<?php echo esc_attr( $ticker_expired_message ); ?>"
+		<?php if ( $ticker_product_id > 0 ) : ?>
+			data-ticker-product-id="<?php echo esc_attr( (string) $ticker_product_id ); ?>"
+		<?php endif; ?>
 	>
 		<?php if ( '' !== $ticker_heading ) : ?>
 			<p class="ticker__heading"><?php echo esc_html( $ticker_heading ); ?></p>

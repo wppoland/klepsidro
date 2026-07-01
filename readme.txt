@@ -68,6 +68,11 @@ The clock is hidden and replaced by a short "sale ended" line. You can set your 
 = What happens when I delete Ticker? =
 Its two options are removed and no tables are left behind, since Ticker never creates any.
 
+
+= Does this plugin work on WordPress Multisite? =
+
+Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data.
+
 == Screenshots ==
 
 1. The sale countdown timer on a product page.

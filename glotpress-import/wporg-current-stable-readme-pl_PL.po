@@ -1,0 +1,22 @@
+# wp.org Stable Readme translation (pl_PL)
+msgid ""
+msgstr ""
+"Project-Id-Version: ticker Stable Readme\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-ticker/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-ticker/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-ticker\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-ticker/issues"
+msgstr "* <strong>Documentation</strong> - https://plogins.com/pl/plogins-ticker/docs/\n* <strong>Plugin page</strong> - https://plogins.com/pl/plogins-ticker/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-ticker\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-ticker/issues"
+
+msgid "* Add `ticker/countdown_rendered` action and `data-ticker-product-id` on the countdown markup for PRO analytics."
+msgstr "* Dodaj akcję „ticker/countdown_rendered” i „data-ticker-product-id” w znacznikach odliczania dla analiz PRO."
+
+msgid "* Add `ticker/end_timestamp` filter so PRO and custom code can override the resolved countdown end time."
+msgstr "* Dodaj filtr „ticker/end_timestamp”, aby PRO i kod niestandardowy mogły zastąpić ustalony czas zakończenia odliczania."
+
+msgid "* First release. Counts down to a product's WooCommerce sale end date or a store-wide campaign date, with configurable placement, three time formats, an optional heading, and a custom sale-ended message. Server-rendered, no jQuery, no layout shift.\n</content>\n</invoke>"
+msgstr "* Pierwsze wydanie. Odlicza do daty zakończenia sprzedaży produktu w WooCommerce lub daty kampanii obejmującej cały sklep, z konfigurowalnym rozmieszczeniem, trzema formatami czasu, opcjonalnym nagłówkiem i niestandardową wiadomością o zakończeniu sprzedaży. Renderowane na serwerze, bez jQuery, bez zmiany układu.\n</treść>\n</wywołaj>"
+

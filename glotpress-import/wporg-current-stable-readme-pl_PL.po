@@ -8,15 +8,75 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: plogins-i18n\n"
 
+msgid "Adds a live sale countdown to WooCommerce product pages. No jQuery, no layout shift, accessible markup."
+msgstr "Dodaje na stronach produktów WooCommerce odliczanie promocji na żywo. Bez jQuery, bez przeskoków układu, dostępny markup."
+
+msgid "Ticker shows how much time is left on a sale, right on the product page. It reads the end time from each product's WooCommerce sale dates, or from a single campaign date you set for the whole store, and counts down to it."
+msgstr "Ticker pokazuje, ile czasu zostało do końca promocji, bezpośrednio na stronie produktu. Odczytuje czas zakończenia z dat promocji WooCommerce każdego produktu albo z jednej daty kampanii ustawionej dla całego sklepu i odlicza do niej."
+
+msgid "The end time is worked out on the server, so there is one source of truth and a visitor's wrong system clock can't change when the sale actually ends. The browser only formats the remaining time, using a small vanilla-JavaScript script with no jQuery and no other dependencies."
+msgstr "Czas zakończenia jest wyliczany po stronie serwera, więc jest jedno źródło prawdy, a błędny zegar systemowy odwiedzającego nie zmienia momentu faktycznego zakończenia promocji. Przeglądarka tylko formatuje pozostały czas, używając małego skryptu w czystym JavaScripcie, bez jQuery i bez innych zależności."
+
+msgid "The countdown is built around the WooCommerce sale you already run, so there is nothing extra to schedule:"
+msgstr "Odliczanie opiera się na promocji WooCommerce, którą już prowadzisz, więc nie trzeba nic dodatkowo planować:"
+
+msgid "* Reads each product's native \"Sale price dates\" out of the box. Set a sale end date and the countdown shows up on that product.\n* Or set one store-wide campaign end date if you'd rather count everything down to the same moment. You can mix the two: the per-product sale date wins, and the campaign date fills in for products that don't have one.\n* Pick where the timer goes: the product summary (below the price), before or after the add-to-cart form, or the product meta area.\n* Three time formats: days/hours/minutes/seconds, hours/minutes/seconds, or a compact hours/minutes that drops the ticking seconds on longer campaigns.\n* Optional heading above the clock, and your own wording for the message that replaces it once the sale is over.\n* The markup is rendered server-side with the digit boxes already sized, so the timer doesn't push your layout around when JavaScript fills in the numbers (no CLS).\n* Marked up with `role=\"timer\"` and a polite live region so screen readers can announce it, and the label text is translatable.\n* Restyle it with CSS custom properties, or copy the template into your theme at `yourtheme/ticker/single-product/countdown.php` to change the markup.\n* No custom database tables. Settings sit in `wp_options` and are deleted when you remove the plugin.\n* Declares HPOS and Cart/Checkout Blocks compatibility."
+msgstr "* Odczytuje natywne „Daty ceny promocyjnej” każdego produktu od razu po instalacji. Ustaw datę końca promocji, a odliczanie pojawi się na tym produkcie.\n* Albo ustaw jedną datę końca kampanii dla całego sklepu, jeśli wolisz odliczać wszystko do tego samego momentu. Możesz łączyć oba podejścia: wygrywa data promocji produktu, a data kampanii uzupełnia produkty bez własnej daty.\n* Wybierz, gdzie ma się pojawić timer: w podsumowaniu produktu (pod ceną), przed lub po formularzu „dodaj do koszyka”, albo w obszarze meta produktu.\n* Trzy formaty czasu: dni/godziny/minuty/sekundy, godziny/minuty/sekundy albo zwarte godziny/minuty bez tykających sekund przy dłuższych kampaniach.\n* Opcjonalny nagłówek nad zegarem i własne sformułowanie komunikatu, który zastępuje go po zakończeniu promocji.\n* Markup jest renderowany po stronie serwera z już wymiarowanymi polami cyfr, więc timer nie przesuwa układu, gdy JavaScript wypełnia liczby (brak CLS).\n* Oznaczony `role=\"timer\"` i uprzejmym regionem live, aby czytniki ekranu mogły go ogłaszać; tekst etykiety jest przetłumaczalny.\n* Przestylowuj go własnymi właściwościami CSS albo skopiuj szablon do motywu pod `yourtheme/ticker/single-product/countdown.php`, aby zmienić markup.\n* Bez niestandardowych tabel w bazie danych. Ustawienia trafiają do `wp_options` i są usuwane po odinstalowaniu wtyczki.\n* Deklaruje zgodność z HPOS oraz blokami koszyka i kasy."
+
+msgid "Source code and issue tracker live on GitHub: https://github.com/wppoland/plogins-ticker"
+msgstr "Kod źródłowy i tracker zgłoszeń są na GitHubie: https://github.com/wppoland/plogins-ticker"
+
+msgid "1. Install and activate WooCommerce 8.0 or later.\n2. Upload the `ticker` folder to `/wp-content/plugins/`, or install it from the Plugins screen.\n3. Activate Ticker through the <strong>Plugins<strong> screen. 4. Go to </strong>WooCommerce → Ticker</strong> and tick \"Enable countdown\".\n5. Set a sale end date on a product (Product data → General → Sale price dates), or set a campaign end date in Ticker's settings. The countdown then appears on the product page."
+msgstr "1. Zainstaluj i włącz WooCommerce 8.0 lub nowsze.\n2. Prześlij folder `ticker` do `/wp-content/plugins/` albo zainstaluj go z ekranu Wtyczki.\n3. Aktywuj Ticker na ekranie <strong>Wtyczki</strong>.\n4. Przejdź do <strong>WooCommerce → Ticker</strong> i zaznacz „Włącz odliczanie”.\n5. Ustaw datę końca promocji na produkcie (Dane produktu → Ogólne → Daty ceny promocyjnej) albo datę końca kampanii w ustawieniach Ticker. Odliczanie pojawi się na stronie produktu."
+
 msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-ticker/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-ticker/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-ticker\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-ticker/issues"
-msgstr "* <strong>Documentation</strong> - https://plogins.com/pl/plogins-ticker/docs/\n* <strong>Plugin page</strong> - https://plogins.com/pl/plogins-ticker/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-ticker\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-ticker/issues"
+msgstr "* <strong>Dokumentacja</strong> - https://plogins.com/pl/plogins-ticker/docs/\n* <strong>Strona wtyczki</strong> - https://plogins.com/pl/plogins-ticker/\n* <strong>Kod źródłowy</strong> - https://github.com/wppoland/plogins-ticker\n* <strong>Zgłoszenia błędów i propozycje funkcji</strong> - https://github.com/wppoland/plogins-ticker/issues"
+
+msgid "Yes. It hooks into WooCommerce product pages and sale dates, and needs WooCommerce 8.0 or later. If WooCommerce isn't active, Ticker stays quiet and shows an admin notice."
+msgstr "Tak. Podpina się pod strony produktów i daty promocji WooCommerce i wymaga WooCommerce 8.0 lub nowszego. Gdy WooCommerce nie jest aktywne, Ticker pozostaje cichy i pokazuje powiadomienie w panelu."
+
+msgid "By default Ticker reads each product's \"Sale price dates → To\" value. You can switch the source to a single campaign date that applies across the store, or leave it on the sale date and set a campaign date as well: the product's own sale end is used when it has one, otherwise the campaign date."
+msgstr "Domyślnie Ticker odczytuje wartość „Daty ceny promocyjnej → Do” każdego produktu. Możesz przełączyć źródło na jedną datę kampanii obowiązującą w całym sklepie albo zostawić datę promocji i dodatkowo ustawić datę kampanii: używana jest własna data końca promocji produktu, gdy jest ustawiona, w przeciwnym razie data kampanii."
+
+msgid "No. The countdown is rendered on the server with the digit boxes already sized, so the browser drops the numbers into reserved space instead of reflowing the page. That keeps Cumulative Layout Shift at zero for the timer."
+msgstr "Nie. Odliczanie jest renderowane po stronie serwera z już wymiarowanymi polami cyfr, więc przeglądarka wstawia liczby w zarezerwowane miejsce zamiast przebudowywać stronę. Dzięki temu Cumulative Layout Shift dla timera wynosi zero."
+
+msgid "The end moment is sent from the server as a fixed UTC timestamp. The browser only counts down to it, so a visitor's misconfigured clock changes nothing about when the sale ends."
+msgstr "Moment zakończenia jest wysyłany z serwera jako stały znacznik czasu UTC. Przeglądarka tylko odlicza do niego, więc źle ustawiony zegar odwiedzającego nic nie zmienia w faktycznym zakończeniu promocji."
+
+msgid "The clock is hidden and replaced by a short \"sale ended\" line. You can set your own wording for it, or leave it on the default."
+msgstr "Zegar jest ukrywany i zastępowany krótką linią „promocja zakończona”. Możesz ustawić własne sformułowanie albo zostawić domyślne."
+
+msgid "Its two options are removed and no tables are left behind, since Ticker never creates any."
+msgstr "Jego dwie opcje są usuwane i nie zostają żadne tabele, ponieważ Ticker nigdy żadnych nie tworzy."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Tak. Ta wtyczka jest kompatybilna z WordPress Multisite. Włącz ją dla całej sieci lub w poszczególnych witrynach; każda witryna zachowuje własne ustawienia i dane."
+
+msgid "1. The sale countdown timer on a product page.\n2. The settings page: countdown source, format, and placement."
+msgstr "1. Timer odliczania promocji na stronie produktu.\n2. Strona ustawień: źródło odliczania, format i położenie."
+
+msgid "Ticker does not connect to any external services. It resolves the countdown end time entirely on your own server from each product's WooCommerce \"Sale price dates\" or a store-wide campaign date you set, and its `assets/js/ticker.js` script only formats that time in the browser, with no requests to any third party. Your settings are stored in the `ticker_settings` and `ticker_db_version` options in your site's `wp_options` table; no custom tables are created and no data leaves your site."
+msgstr "Ticker nie łączy się z żadnymi usługami zewnętrznymi. Czas zakończenia odliczania jest w całości wyliczany na Twoim serwerze z „Dat ceny promocyjnej” WooCommerce każdego produktu albo ze sklepowej daty kampanii, którą ustawiasz, a skrypt `assets/js/ticker.js` tylko formatuje ten czas w przeglądarce, bez żądań do podmiotów trzecich. Ustawienia są przechowywane w opcjach `ticker_settings` i `ticker_db_version` w tabeli `wp_options` Twojej witryny; nie tworzy się niestandardowych tabel i żadne dane nie opuszczają witryny."
+
+msgid "Plogins Ticker includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-ticker`, so WordPress.org language packs can also override or extend these bundled translations."
+msgstr "Plogins Ticker zawiera polskie, niemieckie i hiszpańskie tłumaczenia interfejsu wtyczki. Domena tekstowa to `plogins-ticker`, więc pakiety językowe z WordPress.org mogą też nadpisywać lub rozszerzać te dołączone tłumaczenia."
+
+msgid "* Added bundled Polish, German and Spanish translations for the plugin interface."
+msgstr "* Dodano dołączone polskie, niemieckie i hiszpańskie tłumaczenia interfejsu wtyczki."
+
+msgid "* First stable release."
+msgstr "* Pierwsza stabilna wersja."
+
+msgid "* Renamed to Plogins Ticker for WooCommerce for a more distinctive plugin name."
+msgstr "* Zmieniono nazwę na Plogins Ticker dla WooCommerce, aby uzyskać bardziej charakterystyczną nazwę wtyczki."
 
 msgid "* Add `ticker/countdown_rendered` action and `data-ticker-product-id` on the countdown markup for PRO analytics."
-msgstr "* Dodaj akcję „ticker/countdown_rendered” i „data-ticker-product-id” w znacznikach odliczania dla analiz PRO."
+msgstr "* Dodaje akcję `ticker/countdown_rendered` i `data-ticker-product-id` w markupie odliczania dla analityki PRO."
 
 msgid "* Add `ticker/end_timestamp` filter so PRO and custom code can override the resolved countdown end time."
-msgstr "* Dodaj filtr „ticker/end_timestamp”, aby PRO i kod niestandardowy mogły zastąpić ustalony czas zakończenia odliczania."
+msgstr "* Dodaje filtr `ticker/end_timestamp`, aby PRO i własny kod mogły nadpisać ustalony czas zakończenia odliczania."
 
 msgid "* First release. Counts down to a product's WooCommerce sale end date or a store-wide campaign date, with configurable placement, three time formats, an optional heading, and a custom sale-ended message. Server-rendered, no jQuery, no layout shift.\n</content>\n</invoke>"
-msgstr "* Pierwsze wydanie. Odlicza do daty zakończenia sprzedaży produktu w WooCommerce lub daty kampanii obejmującej cały sklep, z konfigurowalnym rozmieszczeniem, trzema formatami czasu, opcjonalnym nagłówkiem i niestandardową wiadomością o zakończeniu sprzedaży. Renderowane na serwerze, bez jQuery, bez zmiany układu.\n</treść>\n</wywołaj>"
+msgstr "* Pierwsze wydanie. Odlicza do daty końca promocji WooCommerce produktu albo sklepowej daty kampanii, z konfigurowalnym położeniem, trzema formatami czasu, opcjonalnym nagłówkiem i własnym komunikatem o zakończeniu promocji. Renderowane po stronie serwera, bez jQuery, bez przeskoków układu."
 

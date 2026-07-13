@@ -1,4 +1,4 @@
-=== Plogins Ticker - Countdown Timer for WooCommerce ===
+=== Ticker - Countdown Timer for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5

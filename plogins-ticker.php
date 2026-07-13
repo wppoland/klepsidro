@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Ticker - Countdown Timer for WooCommerce
+ * Plugin Name:       Ticker - Countdown Timer for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-ticker/
  * Description:        Show a live sale countdown timer on WooCommerce product pages to create urgency and turn browsers into buyers.
  * Version:           1.0.2

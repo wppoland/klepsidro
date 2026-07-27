@@ -31,12 +31,27 @@ final class Settings implements HasHooks {
 	private const SECTION_PLACEMENT  = 'ticker_placement';
 
 	/**
+	 * Lazily built PRO upsell renderer.
+	 *
+	 * @var ProUpsell|null
+	 */
+	private ?ProUpsell $pro_upsell = null;
+
+	/**
+	 * PRO upsell renderer, built on first use.
+	 */
+	private function pro_upsell(): ProUpsell {
+		return $this->pro_upsell ??= new ProUpsell();
+	}
+
+	/**
 	 * Register WordPress hooks.
 	 */
 	public function registerHooks(): void {
 		add_action( 'admin_menu', array( $this, 'add_menu_page' ) );
 		add_action( 'admin_init', array( $this, 'register_settings' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_assets' ) );
+		$this->pro_upsell()->registerHooks();
 	}
 
 	/**
@@ -347,6 +362,9 @@ final class Settings implements HasHooks {
 		?>
 		<div class="wrap ticker-settings">
 			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
+
+			<?php $this->pro_upsell()->banner(); ?>
+
 			<p class="ticker-settings__lede"><?php esc_html_e( 'A live sale countdown for your product pages. The defaults below work out of the box, adjust only what you need.', 'plogins-ticker' ); ?></p>
 			<form method="post" action="options.php">
 				<?php
@@ -355,6 +373,8 @@ final class Settings implements HasHooks {
 				submit_button();
 				?>
 			</form>
+
+			<?php $this->pro_upsell()->cards(); ?>
 		</div>
 		<?php
 	}

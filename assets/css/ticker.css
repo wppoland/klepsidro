@@ -1,15 +1,15 @@
 /* ==========================================================================
-   Ticker — Sale Countdown Timer (storefront)
+   Ticker, Sale Countdown Timer (storefront)
    Themeable, accessible, Core-Web-Vitals-native. No layout shift, no FOUC.
 
    Craft: a sale is a fuse burning down. The seconds unit carries a stopwatch
    sweep ring that depletes once per minute, and the live second snaps like a
-   mechanical tick — so even at a glance, with sound off, you SEE time drain.
+   mechanical tick, so even at a glance, with sound off, you SEE time drain.
    Everything else stays calm instrument ink; only the seconds wear the ember.
    ========================================================================== */
 
 .ticker {
-	/* Themeable tokens — override in your theme to restyle.
+	/* Themeable tokens, override in your theme to restyle.
 	   Fallbacks inherit the theme's own colour where a host token exists. */
 	--ticker-ember: var(--wp--preset--color--vivid-red, #c2410c);
 	--ticker-ember-soft: color-mix(in srgb, var(--ticker-ember) 12%, transparent);
@@ -37,7 +37,7 @@
 	background: var(--ticker-surface);
 	border: 1px solid var(--ticker-hairline);
 	border-radius: var(--ticker-radius);
-	/* A faint warm shelf — the timer sits on a sliver of its own ember. */
+	/* A faint warm shelf, the timer sits on a sliver of its own ember. */
 	box-shadow:
 		inset 3px 0 0 0 var(--ticker-ember),
 		0 1px 2px rgba(29, 31, 38, 0.05);
@@ -110,13 +110,13 @@
 
 /* --------------------------------------------------------------------------
    The bold move: the seconds unit becomes a stopwatch dial.
-   A conic sweep ring drains once per minute around the live digit — the
+   A conic sweep ring drains once per minute around the live digit, the
    visible arc of a fuse burning down. The digit wears the ember and snaps
    like a mechanical tick. This is the single moment that earns colour;
    the day/hour/minute boxes stay calm so the dial is unmistakably the heart.
    -------------------------------------------------------------------------- */
 .ticker__unit--seconds {
-	/* Drop the shared box chrome — this unit is a round dial, not a tile. */
+	/* Drop the shared box chrome, this unit is a round dial, not a tile. */
 	padding: 0;
 	min-width: 0;
 	width: 3.1em;
@@ -206,7 +206,7 @@
 		0 1px 2px rgba(29, 31, 38, 0.05);
 }
 
-/* Dark theme awareness — opt in via the storefront's own scheme. */
+/* Dark theme awareness, opt in via the storefront's own scheme. */
 @media (prefers-color-scheme: dark) {
 	.ticker {
 		--ticker-ember: #ff7a45;

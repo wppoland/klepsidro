@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: ticker.php
 msgid "Ticker - Sales Countdown Timer for WooCommerce"
-msgstr "Ticker – Verkaufs-Countdown-Timer für WooCommerce"
+msgstr "Ticker, Verkaufs-Countdown-Timer für WooCommerce"
 
 #. Plugin URI of the plugin
 #: ticker.php
@@ -272,7 +272,7 @@ msgid ""
 "Ticker - Sales Countdown Timer for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Ticker – Verkaufs-Countdown-Timer für WooCommerce erfordert, dass "
+"Ticker, Verkaufs-Countdown-Timer für WooCommerce erfordert, dass "
 "WooCommerce aktiv ist."
 
 #: src/Admin/ProUpsell.php:78

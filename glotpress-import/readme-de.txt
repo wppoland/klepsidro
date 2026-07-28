@@ -15,7 +15,7 @@ Fügt WooCommerce-Produktseiten einen Live-Verkaufs-Countdown hinzu. Kein jQuery
 
 Ticker zeigt direkt auf der Produktseite, wie viel Zeit im Sale noch übrig ist. Es liest den Endzeitpunkt aus den WooCommerce-Verkaufsdaten jedes Produkts oder aus einem einzigen Kampagnen-Datum, das du für den gesamten Shop festlegst, und zählt bis dahin herunter.
 
-Der Endzeitpunkt wird serverseitig berechnet, sodass es eine einzige Quelle der Wahrheit gibt und die falsche Systemuhr eines Besuchers nicht ändert, wann der Sale tatsächlich endet. Der Browser formatiert nur die verbleibende Zeit mit einem kleinen Skript in reinem JavaScript – ohne jQuery und ohne weitere Abhängigkeiten.
+Der Endzeitpunkt wird serverseitig berechnet, sodass es eine einzige Quelle der Wahrheit gibt und die falsche Systemuhr eines Besuchers nicht ändert, wann der Sale tatsächlich endet. Der Browser formatiert nur die verbleibende Zeit mit einem kleinen Skript in reinem JavaScript, ohne jQuery und ohne weitere Abhängigkeiten.
 
 Der Countdown baut auf dem WooCommerce-Sale auf, den du bereits führst, sodass nichts Zusätzliches geplant werden muss:
 
@@ -80,7 +80,7 @@ Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es netzwerkw
 
 == External Services ==
 
-Ticker stellt keine Verbindung zu externen Diensten her. Es ermittelt den Countdown-Endzeitpunkt vollständig auf deinem eigenen Server aus den WooCommerce-„Verkaufspreis-Daten“ jedes Produkts oder einem von dir gesetzten shopweiten Kampagnen-Datum, und sein Skript `assets/js/ticker.js` formatiert diese Zeit nur im Browser – ohne Anfragen an Dritte. Deine Einstellungen werden in den Optionen `ticker_settings` und `ticker_db_version` in der `wp_options`-Tabelle deiner Website gespeichert; es werden keine benutzerdefinierten Tabellen erstellt und keine Daten verlassen deine Website.
+Ticker stellt keine Verbindung zu externen Diensten her. Es ermittelt den Countdown-Endzeitpunkt vollständig auf deinem eigenen Server aus den WooCommerce-„Verkaufspreis-Daten“ jedes Produkts oder einem von dir gesetzten shopweiten Kampagnen-Datum, und sein Skript `assets/js/ticker.js` formatiert diese Zeit nur im Browser, ohne Anfragen an Dritte. Deine Einstellungen werden in den Optionen `ticker_settings` und `ticker_db_version` in der `wp_options`-Tabelle deiner Website gespeichert; es werden keine benutzerdefinierten Tabellen erstellt und keine Daten verlassen deine Website.
 
 == Translations ==
 

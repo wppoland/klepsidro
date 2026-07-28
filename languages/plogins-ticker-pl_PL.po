@@ -12,7 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 "X-Domain: plogins-ticker\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -32,8 +33,8 @@ msgid ""
 "Show a live sale countdown timer on WooCommerce product pages to create "
 "urgency and turn browsers into buyers."
 msgstr ""
-"Wyświetlaj na żywo zegar odliczający do końca promocji na stronach produktów"
-" WooCommerce, aby budować poczucie pilności i zmieniać oglądających w "
+"Wyświetlaj na żywo zegar odliczający do końca promocji na stronach produktów "
+"WooCommerce, aby budować poczucie pilności i zmieniać oglądających w "
 "kupujących."
 
 #. Author of the plugin
@@ -101,8 +102,8 @@ msgstr "Buduj poczucie pilności dzięki odliczaniu na żywo"
 #: src/Admin/Settings.php:132
 msgid ""
 "Show a ticking countdown to the end of a sale on your product pages. The "
-"timer is calculated on the server and counted down in the browser, no layout"
-" shift, no jQuery."
+"timer is calculated on the server and counted down in the browser, no layout "
+"shift, no jQuery."
 msgstr ""
 "Wyświetlaj tykający zegar odliczający do końca promocji na stronach "
 "produktów. Zegar jest obliczany na serwerze i odliczany w przeglądarce, bez "
@@ -124,8 +125,8 @@ msgid ""
 "already work, change these only to match your store’s voice."
 msgstr ""
 "Dostosuj sformułowania i poziom szczegółów, które widzą kupujący. Rozsądne "
-"ustawienia domyślne już działają, zmień je tylko tak, aby pasowały do "
-"​​głosu Twojego sklepu."
+"ustawienia domyślne już działają, zmień je tylko tak, aby pasowały do ​​głosu "
+"Twojego sklepu."
 
 #: src/Admin/Settings.php:159
 msgid "Where it appears"
@@ -206,8 +207,8 @@ msgstr ""
 
 #: src/Admin/Settings.php:291
 msgid ""
-"How the remaining time is displayed. Compact drops seconds for a calmer look"
-" on multi-day campaigns."
+"How the remaining time is displayed. Compact drops seconds for a calmer look "
+"on multi-day campaigns."
 msgstr ""
 "Sposób wyświetlania pozostałego czasu. Compact traci sekundy, zapewniając "
 "spokojniejszy wygląd w kampaniach wielodniowych."
@@ -226,16 +227,16 @@ msgstr "Ta promocja się zakończyła."
 
 #: src/Admin/Settings.php:336
 msgid ""
-"Shown in place of the clock once the countdown reaches zero. Leave blank for"
-" the default message."
+"Shown in place of the clock once the countdown reaches zero. Leave blank for "
+"the default message."
 msgstr ""
 "Wyświetlane zamiast zegara, gdy odliczanie osiągnie zero. Pozostaw puste, "
 "aby użyć domyślnego komunikatu."
 
 #: src/Admin/Settings.php:350
 msgid ""
-"A live sale countdown for your product pages. The defaults below work out of"
-" the box, adjust only what you need."
+"A live sale countdown for your product pages. The defaults below work out of "
+"the box, adjust only what you need."
 msgstr ""
 "Odliczanie sprzedaży na żywo na stronach produktów. Poniższe ustawienia "
 "domyślne działają od razu po wyjęciu z pudełka, dostosuj tylko to, czego "
@@ -275,8 +276,68 @@ msgid ""
 "Ticker - Sales Countdown Timer for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Ticker - Zegar odliczający do końca promocji dla WooCommerce wymaga aktywnej"
-" wtyczki WooCommerce."
+"Ticker - Zegar odliczający do końca promocji dla WooCommerce wymaga aktywnej "
+"wtyczki WooCommerce."
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
 
 #~ msgid "WPPoland"
 #~ msgstr "WPPoland"
@@ -288,8 +349,8 @@ msgstr ""
 #~ msgstr "Zegar odliczający do końca promocji"
 
 #~ msgid ""
-#~ "How the remaining time is displayed. Compact hides seconds for a calmer look"
-#~ " on long campaigns."
+#~ "How the remaining time is displayed. Compact hides seconds for a calmer "
+#~ "look on long campaigns."
 #~ msgstr ""
-#~ "Sposób wyświetlania pozostałego czasu. Tryb kompaktowy ukrywa sekundy, dla "
-#~ "spokojniejszego wyglądu przy długich kampaniach."
+#~ "Sposób wyświetlania pozostałego czasu. Tryb kompaktowy ukrywa sekundy, "
+#~ "dla spokojniejszego wyglądu przy długich kampaniach."

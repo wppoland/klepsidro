@@ -101,8 +101,8 @@ msgstr "Schaffe Dringlichkeit mit einem Live-Countdown"
 #: src/Admin/Settings.php:132
 msgid ""
 "Show a ticking countdown to the end of a sale on your product pages. The "
-"timer is calculated on the server and counted down in the browser, no layout"
-" shift, no jQuery."
+"timer is calculated on the server and counted down in the browser, no layout "
+"shift, no jQuery."
 msgstr ""
 "Zeige auf deinen Produktseiten einen tickenden Countdown bis zum Ende eines "
 "Verkaufs an. Der Timer wird auf dem Server berechnet und im Browser "
@@ -110,8 +110,7 @@ msgstr ""
 
 #: src/Admin/Settings.php:137
 msgid "Decide whether the timer shows and where its end time comes from."
-msgstr ""
-"Entscheide, ob der Timer angezeigt wird und woher seine Endzeit kommt."
+msgstr "Entscheide, ob der Timer angezeigt wird und woher seine Endzeit kommt."
 
 #: src/Admin/Settings.php:147
 msgid "How it reads"
@@ -204,8 +203,8 @@ msgstr ""
 
 #: src/Admin/Settings.php:291
 msgid ""
-"How the remaining time is displayed. Compact drops seconds for a calmer look"
-" on multi-day campaigns."
+"How the remaining time is displayed. Compact drops seconds for a calmer look "
+"on multi-day campaigns."
 msgstr ""
 "Wie die verbleibende Zeit angezeigt wird. Compact sorgt für einen ruhigeren "
 "Look bei mehrtägigen Kampagnen."
@@ -224,16 +223,16 @@ msgstr "Dieser Verkauf ist beendet."
 
 #: src/Admin/Settings.php:336
 msgid ""
-"Shown in place of the clock once the countdown reaches zero. Leave blank for"
-" the default message."
+"Shown in place of the clock once the countdown reaches zero. Leave blank for "
+"the default message."
 msgstr ""
-"Wird anstelle der Uhr angezeigt, sobald der Countdown Null erreicht. Für die"
-" Standardnachricht leer lassen."
+"Wird anstelle der Uhr angezeigt, sobald der Countdown Null erreicht. Für die "
+"Standardnachricht leer lassen."
 
 #: src/Admin/Settings.php:350
 msgid ""
-"A live sale countdown for your product pages. The defaults below work out of"
-" the box, adjust only what you need."
+"A live sale countdown for your product pages. The defaults below work out of "
+"the box, adjust only what you need."
 msgstr ""
 "Ein Live-Sale-Countdown für deine Produktseiten. Die folgenden "
 "Standardeinstellungen funktionieren sofort. Passe nur das an, was du "
@@ -275,3 +274,63 @@ msgid ""
 msgstr ""
 "Ticker – Verkaufs-Countdown-Timer für WooCommerce erfordert, dass "
 "WooCommerce aktiv ist."
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"

@@ -1,5 +1,5 @@
 /**
- * Ticker — live sale countdown.
+ * Ticker, live sale countdown.
  *
  * The end time is provided by the server as a UTC epoch (seconds) in
  * data-ticker-end; the browser only formats the remaining time, so client
@@ -59,11 +59,11 @@
 		setValue( el, 'seconds', pad( seconds ) );
 
 		// Screen-reader status: announce only when the minute (or coarser unit)
-		// changes — never per second — so assistive tech isn't flooded.
+		// changes, never per second, so assistive tech isn't flooded.
 		announce( el, days, hours, minutes, format );
 
 		// Stopwatch sweep: drain the ring around the seconds unit once per
-		// minute, and snap the digit on each new second. Presentation only —
+		// minute, and snap the digit on each new second. Presentation only, 
 		// the actual end moment is fixed by the server timestamp above.
 		sweep( el, seconds );
 

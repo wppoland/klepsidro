@@ -31,16 +31,14 @@ final class Settings implements HasHooks {
 	private const SECTION_PLACEMENT  = 'ticker_placement';
 
 	/**
-	 * Lazily-instantiated PRO upsell renderer.
+	 * Lazily built PRO upsell renderer.
 	 *
 	 * @var ProUpsell|null
 	 */
 	private ?ProUpsell $pro_upsell = null;
 
 	/**
-	 * Lazily create the PRO upsell renderer.
-	 *
-	 * @return ProUpsell
+	 * PRO upsell renderer, built on first use.
 	 */
 	private function pro_upsell(): ProUpsell {
 		return $this->pro_upsell ??= new ProUpsell();
@@ -368,18 +366,13 @@ final class Settings implements HasHooks {
 			<?php $this->pro_upsell()->banner(); ?>
 
 			<p class="ticker-settings__lede"><?php esc_html_e( 'A live sale countdown for your product pages. The defaults below work out of the box, adjust only what you need.', 'plogins-ticker' ); ?></p>
-
-			<div class="ticker-cols">
-				<form method="post" action="options.php">
-					<?php
-					settings_fields( self::PAGE );
-					do_settings_sections( self::PAGE );
-					submit_button();
-					?>
-				</form>
-
-				<?php $this->pro_upsell()->aside(); ?>
-			</div>
+			<form method="post" action="options.php">
+				<?php
+				settings_fields( self::PAGE );
+				do_settings_sections( self::PAGE );
+				submit_button();
+				?>
+			</form>
 
 			<?php $this->pro_upsell()->cards(); ?>
 		</div>

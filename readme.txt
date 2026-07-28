@@ -1,10 +1,10 @@
-=== Plogins Ticker - Countdown Timer for WooCommerce ===
+=== Ticker - Countdown Timer for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.3
+Stable tag: 1.0.4
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -82,7 +82,20 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 Ticker does not connect to any external services. It resolves the countdown end time entirely on your own server from each product's WooCommerce "Sale price dates" or a store-wide campaign date you set, and its `assets/js/ticker.js` script only formats that time in the browser, with no requests to any third party. Your settings are stored in the `ticker_settings` and `ticker_db_version` options in your site's `wp_options` table; no custom tables are created and no data leaves your site.
 
+== Translations ==
+
+Plogins Ticker includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-ticker`, so WordPress.org language packs can also override or extend these bundled translations.
+
 == Changelog ==
+
+= 1.0.3 =
+* Translations: completed Polish, German and Spanish for the PRO upgrade panel.
+
+= 1.0.2 =
+* Added bundled Polish, German and Spanish translations for the plugin interface.
+
+= 1.0.1 =
+* First stable release.
 
 = 0.1.3 =
 * Renamed to Plogins Ticker for WooCommerce for a more distinctive plugin name.

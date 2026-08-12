@@ -108,5 +108,3 @@ Plogins Ticker includes Polish, German and Spanish translations for the plugin i
 
 = 0.1.0 =
 * First release. Counts down to a product's WooCommerce sale end date or a store-wide campaign date, with configurable placement, three time formats, an optional heading, and a custom sale-ended message. Server-rendered, no jQuery, no layout shift.
-</content>
-</invoke>

@@ -30,7 +30,7 @@ The countdown is built around the WooCommerce sale you already run, so there is 
 * No custom database tables. Settings sit in `wp_options` and are deleted when you remove the plugin.
 * Declares HPOS and Cart/Checkout Blocks compatibility.
 
-Source code and issue tracker live on GitHub: https://github.com/wppoland/plogins-ticker
+Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticker](https://github.com/wppoland/plogins-ticker)
 
 == Installation ==
 
@@ -44,10 +44,10 @@ Source code and issue tracker live on GitHub: https://github.com/wppoland/plogin
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-ticker/docs/
-* **Plugin page** - https://plogins.com/plogins-ticker/
-* **Source code** - https://github.com/wppoland/plogins-ticker
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-ticker/issues
+* **Documentation**: [plogins.com/plogins-ticker/docs/](https://plogins.com/plogins-ticker/docs/)
+* **Plugin page**: [plogins.com/plogins-ticker/](https://plogins.com/plogins-ticker/)
+* **Source code**: [github.com/wppoland/plogins-ticker](https://github.com/wppoland/plogins-ticker)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-ticker/issues](https://github.com/wppoland/plogins-ticker/issues)
 
 
 = Does Ticker need WooCommerce? =

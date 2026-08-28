@@ -15,7 +15,6 @@ return [
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
-    'price_pln'  => 85,
     'lead'       => [
         'en' => 'Per-product campaign dates, scheduled windows, recurring campaigns, product targeting and analytics are available today.',
         'pl' => 'Per-produktowa data kampanii, zaplanowane okna, cykliczne kampanie, targetowanie i analityka są już dostępne.',

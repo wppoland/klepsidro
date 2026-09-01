@@ -2,9 +2,9 @@
 Contributors: motylanogha
 Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -87,6 +87,9 @@ Ticker does not connect to any external services. It resolves the countdown end 
 Plogins Ticker includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-ticker`, so WordPress.org language packs can also override or extend these bundled translations.
 
 == Changelog ==
+
+= 1.0.6 =
+* Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header.
 
 = 1.0.5 =
 * Fixed the PRO promo on the settings screen quoting a price in PLN. PRO is priced and charged in EUR, so an admin on a Polish site was shown a zloty amount and then billed in euro, and the zloty figure was a fixed conversion that drifted from the real charge as the rate moved. The promo now shows the euro price that is actually taken.

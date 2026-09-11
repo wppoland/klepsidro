@@ -33,12 +33,12 @@ return [
             'pl' => ['title' => 'Cykliczne kampanie odliczania', 'desc' => 'Tygodniowe lub miesięczne okna wyprzedaży, które resetują się automatycznie i ukrywają timer między cyklami.'],
         ],
         [
-            'en' => ['title' => 'Product targeting', 'desc' => 'Show or hide the countdown on selected products, categories or tags on WooCommerce → Ticker.'],
-            'pl' => ['title' => 'Targetowanie produktów', 'desc' => 'Pokaż lub ukryj odliczanie na wybranych produktach, kategoriach lub tagach na WooCommerce → Ticker.'],
+            'en' => ['title' => 'Product targeting', 'desc' => 'Show or hide the countdown on selected products, categories or tags on WooCommerce > Ticker.'],
+            'pl' => ['title' => 'Targetowanie produktów', 'desc' => 'Pokaż lub ukryj odliczanie na wybranych produktach, kategoriach lub tagach na WooCommerce > Ticker.'],
         ],
         [
-            'en' => ['title' => 'Countdown analytics', 'desc' => 'Track aggregate views and add-to-cart counts per product on WooCommerce → Ticker Analytics.'],
-            'pl' => ['title' => 'Analityka odliczania', 'desc' => 'Zliczaj wyświetlenia i dodania do koszyka per produkt na WooCommerce → Ticker Analytics.'],
+            'en' => ['title' => 'Countdown analytics', 'desc' => 'Track aggregate views and add-to-cart counts per product on WooCommerce > Ticker Analytics.'],
+            'pl' => ['title' => 'Analityka odliczania', 'desc' => 'Zliczaj wyświetlenia i dodania do koszyka per produkt na WooCommerce > Ticker Analytics.'],
         ],
         [
             'en' => ['title' => 'Extends free Ticker', 'desc' => 'Requires the active free Ticker plugin; delivered through Freemius with licensing and automatic updates.'],

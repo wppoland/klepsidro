@@ -4,7 +4,7 @@ Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,8 +37,8 @@ Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticke
 1. Install and activate WooCommerce 8.0 or later.
 2. Upload the `ticker` folder to `/wp-content/plugins/`, or install it from the Plugins screen.
 3. Activate Ticker through the **Plugins** screen.
-4. Go to **WooCommerce → Ticker** and tick "Enable countdown".
-5. Set a sale end date on a product (Product data → General → Sale price dates), or set a campaign end date in Ticker's settings. The countdown then appears on the product page.
+4. Go to **WooCommerce > Ticker** and tick "Enable countdown".
+5. Set a sale end date on a product (Product data > General > Sale price dates), or set a campaign end date in Ticker's settings. The countdown then appears on the product page.
 
 == Frequently Asked Questions ==
 
@@ -54,7 +54,7 @@ Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticke
 Yes. It hooks into WooCommerce product pages and sale dates, and needs WooCommerce 8.0 or later. If WooCommerce isn't active, Ticker stays quiet and shows an admin notice.
 
 = Where does the end time come from? =
-By default Ticker reads each product's "Sale price dates → To" value. You can switch the source to a single campaign date that applies across the store, or leave it on the sale date and set a campaign date as well: the product's own sale end is used when it has one, otherwise the campaign date.
+By default Ticker reads each product's "Sale price dates > To" value. You can switch the source to a single campaign date that applies across the store, or leave it on the sale date and set a campaign date as well: the product's own sale end is used when it has one, otherwise the campaign date.
 
 = Will the timer move my page content around? =
 No. The countdown is rendered on the server with the digit boxes already sized, so the browser drops the numbers into reserved space instead of reflowing the page. That keeps Cumulative Layout Shift at zero for the timer.
@@ -87,6 +87,10 @@ Ticker does not connect to any external services. It resolves the countdown end 
 Plogins Ticker is fully translatable and ships the `plogins-ticker.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.10 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
 
 = 1.0.9 =
 * Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.

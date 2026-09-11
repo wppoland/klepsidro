@@ -125,7 +125,7 @@ msgid ""
 "already work, change these only to match your store’s voice."
 msgstr ""
 "Dostosuj sformułowania i poziom szczegółów, które widzą kupujący. Rozsądne "
-"ustawienia domyślne już działają, zmień je tylko tak, aby pasowały do ​​głosu "
+"ustawienia domyślne już działają, zmień je tylko tak, aby pasowały do głosu "
 "Twojego sklepu."
 
 #: src/Admin/Settings.php:159

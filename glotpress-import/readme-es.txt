@@ -37,8 +37,8 @@ El código fuente y el rastreador de incidencias están en GitHub: https://githu
 1. Instala y activa WooCommerce 8.0 o posterior.
 2. Sube la carpeta `ticker` a `/wp-content/plugins/` o instálala desde la pantalla Plugins.
 3. Activa Ticker desde la pantalla <strong>Plugins</strong>.
-4. Ve a <strong>WooCommerce → Ticker</strong> y marca «Activar cuenta atrás».
-5. Establece una fecha de fin de oferta en un producto (Datos del producto → General → Fechas del precio rebajado) o una fecha de fin de campaña en los ajustes de Ticker. La cuenta atrás aparecerá en la página del producto.
+4. Ve a <strong>WooCommerce > Ticker</strong> y marca «Activar cuenta atrás».
+5. Establece una fecha de fin de oferta en un producto (Datos del producto > General > Fechas del precio rebajado) o una fecha de fin de campaña en los ajustes de Ticker. La cuenta atrás aparecerá en la página del producto.
 
 == Frequently Asked Questions ==
 
@@ -54,7 +54,7 @@ El código fuente y el rastreador de incidencias están en GitHub: https://githu
 Sí. Se conecta a las páginas de producto y a las fechas de oferta de WooCommerce y necesita WooCommerce 8.0 o posterior. Si WooCommerce no está activo, Ticker permanece en silencio y muestra un aviso en la administración.
 
 = Where does the end time come from? =
-Por defecto Ticker lee el valor «Fechas del precio rebajado → Hasta» de cada producto. Puedes cambiar la fuente a una única fecha de campaña que aplique en toda la tienda, o dejar la fecha de oferta y además establecer una fecha de campaña: se usa el fin de oferta propio del producto cuando lo tiene; si no, la fecha de campaña.
+Por defecto Ticker lee el valor «Fechas del precio rebajado > Hasta» de cada producto. Puedes cambiar la fuente a una única fecha de campaña que aplique en toda la tienda, o dejar la fecha de oferta y además establecer una fecha de campaña: se usa el fin de oferta propio del producto cuando lo tiene; si no, la fecha de campaña.
 
 = Will the timer move my page content around? =
 No. La cuenta atrás se renderiza en el servidor con los recuadros de dígitos ya dimensionados, así que el navegador coloca los números en el espacio reservado en lugar de refluir la página. Eso mantiene el Cumulative Layout Shift en cero para el temporizador.

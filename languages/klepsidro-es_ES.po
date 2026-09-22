@@ -7,24 +7,24 @@ msgstr ""
 "POT-Creation-Date: 2026-06-20T06:44:30+00:00\n"
 "PO-Revision-Date: 2026-06-20T06:44:30+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
-"Language-Team: German <de@li.org>\n"
-"Language: de_DE\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Domain: plogins-ticker\n"
+"X-Domain: klepsidro\n"
 "X-Generator: WP-CLI 2.11.0\n"
 
 #. Plugin Name of the plugin
 #: ticker.php
 msgid "Ticker - Sales Countdown Timer for WooCommerce"
-msgstr "Ticker, Verkaufs-Countdown-Timer für WooCommerce"
+msgstr "Ticker - Temporizador de cuenta regresiva de ventas para WooCommerce"
 
 #. Plugin URI of the plugin
 #: ticker.php
 msgid "https://plogins.com/ticker/"
-msgstr "https://plogins.com/de/ticker/"
+msgstr "https://plogins.com/es/ticker/"
 
 #. Description of the plugin
 #: ticker.php
@@ -32,9 +32,9 @@ msgid ""
 "Show a live sale countdown timer on WooCommerce product pages to create "
 "urgency and turn browsers into buyers."
 msgstr ""
-"Zeige auf WooCommerce-Produktseiten einen Live-Countdown-Timer für den "
-"Verkauf an, um Dringlichkeit zu schaffen und Stöbernde in Käufer zu "
-"verwandeln."
+"Muestre un temporizador de cuenta regresiva de ventas en vivo en las páginas "
+"de productos de WooCommerce para crear urgencia y convertir a los visitantes "
+"en compradores."
 
 #. Author of the plugin
 #: ticker.php
@@ -48,7 +48,7 @@ msgstr "https://wppoland.com"
 
 #: src/Admin/Settings.php:48
 msgid "Ticker Settings"
-msgstr "Ticker-Einstellungen"
+msgstr "Configuración de Ticker"
 
 #: src/Admin/Settings.php:49
 msgid "Ticker"
@@ -56,47 +56,47 @@ msgstr "Ticker"
 
 #: src/Admin/Settings.php:81
 msgid "WooCommerce sale end date"
-msgstr "Enddatum des WooCommerce-Verkaufs"
+msgstr "Fecha de finalización de la venta de WooCommerce"
 
 #: src/Admin/Settings.php:82
 msgid "Fixed campaign end date"
-msgstr "Enddatum der Kampagne festgelegt"
+msgstr "Fecha de finalización de campaña fija"
 
 #: src/Admin/Settings.php:93
 msgid "Days : Hours : Minutes : Seconds"
-msgstr "Tage: Stunden: Minuten: Sekunden"
+msgstr "Días: Horas: Minutos: Segundos"
 
 #: src/Admin/Settings.php:94
 msgid "Hours : Minutes : Seconds"
-msgstr "Stunden: Minuten: Sekunden"
+msgstr "Horas : Minutos : Segundos"
 
 #: src/Admin/Settings.php:95
 msgid "Hours : Minutes (compact)"
-msgstr "Stunden: Minuten (kompakt)"
+msgstr "Horas: Minutos (compacto)"
 
 #: src/Admin/Settings.php:106
 msgid "Product summary (below price)"
-msgstr "Produktzusammenfassung (unter dem Preis)"
+msgstr "Resumen del producto (debajo del precio)"
 
 #: src/Admin/Settings.php:107
 msgid "Before the add-to-cart form"
-msgstr "Vor dem In-den-Warenkorb-Formular"
+msgstr "Antes del formulario de añadir al carrito"
 
 #: src/Admin/Settings.php:108
 msgid "After the add-to-cart form"
-msgstr "Nach dem In-den-Warenkorb-Formular"
+msgstr "Después del formulario de añadir al carrito"
 
 #: src/Admin/Settings.php:109
 msgid "Product meta area"
-msgstr "Produkt-Metabereich"
+msgstr "Área de metadatos del producto"
 
 #: src/Admin/Settings.php:128
 msgid "When the countdown runs"
-msgstr "Wenn der Countdown läuft"
+msgstr "Cuando corre la cuenta regresiva"
 
 #: src/Admin/Settings.php:131
 msgid "Create urgency with a live countdown"
-msgstr "Schaffe Dringlichkeit mit einem Live-Countdown"
+msgstr "Crea urgencia con una cuenta regresiva en vivo"
 
 #: src/Admin/Settings.php:132
 msgid ""
@@ -104,75 +104,79 @@ msgid ""
 "timer is calculated on the server and counted down in the browser, no layout "
 "shift, no jQuery."
 msgstr ""
-"Zeige auf deinen Produktseiten einen tickenden Countdown bis zum Ende eines "
-"Verkaufs an. Der Timer wird auf dem Server berechnet und im Browser "
-"heruntergezählt, keine Layoutverschiebung, kein jQuery."
+"Muestre una cuenta regresiva hasta el final de una venta en las páginas de "
+"sus productos. El temporizador se calcula en el servidor y se cuenta atrás "
+"en el navegador, sin cambio de diseño, sin jQuery."
 
 #: src/Admin/Settings.php:137
 msgid "Decide whether the timer shows and where its end time comes from."
-msgstr "Entscheide, ob der Timer angezeigt wird und woher seine Endzeit kommt."
+msgstr ""
+"Decide si el temporizador se muestra y de dónde viene su hora de "
+"finalización."
 
 #: src/Admin/Settings.php:147
 msgid "How it reads"
-msgstr "Wie es sich liest"
+msgstr "como se lee"
 
 #: src/Admin/Settings.php:149
 msgid ""
 "Tune the wording and the level of detail shoppers see. Sensible defaults "
 "already work, change these only to match your store’s voice."
 msgstr ""
-"Optimiere den Wortlaut und den Detaillierungsgrad, den Käufer sehen. "
-"Vernünftige Standardeinstellungen funktionieren bereits. Ändere diese nur, "
-"um sie an die Stimmung Ihres Shops anzupassen."
+"Ajuste la redacción y el nivel de detalle que ven los compradores. Los "
+"valores predeterminados sensatos ya funcionan; cámbielos solo para que "
+"coincidan con la voz de su tienda."
 
 #: src/Admin/Settings.php:159
 msgid "Where it appears"
-msgstr "Wo es erscheint"
+msgstr "donde aparece"
 
 #: src/Admin/Settings.php:161
 msgid ""
 "Choose the spot on the single product page that fits your theme’s layout."
 msgstr ""
-"Wähle auf der einzelnen Produktseite die Stelle aus, die zum Layout Ihres "
-"Themes passt."
+"Elija el lugar en la página del producto único que se ajuste al diseño de su "
+"tema."
 
 #: src/Admin/Settings.php:170
 msgid "Enable countdown"
-msgstr "Countdown aktivieren"
+msgstr "Habilitar cuenta regresiva"
 
 #: src/Admin/Settings.php:171
 msgid "Countdown source"
-msgstr "Countdown-Quelle"
+msgstr "fuente de cuenta regresiva"
 
 #: src/Admin/Settings.php:172
 msgid "Campaign end date"
-msgstr "Enddatum der Kampagne"
+msgstr "Fecha de finalización de la campaña"
 
 #: src/Admin/Settings.php:173
 msgid "Heading"
-msgstr "Überschrift"
+msgstr "Título"
 
 #: src/Admin/Settings.php:174
 msgid "Time format"
-msgstr "Zeitformat"
+msgstr "Formato de hora"
 
 #: src/Admin/Settings.php:175
 msgid "Expired message"
-msgstr "Abgelaufene Nachricht"
+msgstr "Mensaje caducado"
 
 #: src/Admin/Settings.php:176
 msgid "Placement"
-msgstr "Platzierung"
+msgstr "Colocación"
 
 #: src/Admin/Settings.php:217
 msgid "Show the sale countdown timer on single product pages."
-msgstr "Zeige den Sale-Countdown-Timer auf einzelnen Produktseiten an."
+msgstr ""
+"Muestre el temporizador de cuenta regresiva de ventas en páginas de "
+"productos individuales."
 
 #: src/Admin/Settings.php:219
 msgid "Master switch. When off, no countdown is rendered anywhere."
 msgstr ""
-"Hauptschalter. Wenn diese Option deaktiviert ist, wird nirgendwo ein "
-"Countdown gerendert."
+"Interruptor maestro. Cuando está desactivado, no se muestra ninguna cuenta "
+"regresiva en ninguna parte."
 
 #: src/Admin/Settings.php:234
 msgid ""
@@ -180,157 +184,157 @@ msgid ""
 "campaign date applies store-wide and is also used as a fallback when a "
 "product has no sale end date."
 msgstr ""
-"Woher die Endzeit kommt. Das Verkaufsdatum wird pro Produkt gelesen; Das "
-"Kampagnendatum gilt für das gesamte Geschäft und wird auch als Ersatz "
-"verwendet, wenn für ein Produkt kein Verkaufsendedatum festgelegt ist."
+"De dónde viene el tiempo del fin. La fecha de venta se lee por producto; la "
+"fecha de la campaña se aplica a toda la tienda y también se utiliza como "
+"alternativa cuando un producto no tiene fecha de finalización de venta."
 
 #. translators: %s: the site timezone string, e.g. Europe/Warsaw or UTC+2.
 #: src/Admin/Settings.php:254
 msgid "Interpreted in your site timezone (%s)."
-msgstr "In der Zeitzone deiner Website interpretiert (%s)."
+msgstr "Interpretado en la zona horaria de tu sitio (%s)."
 
 #: src/Admin/Settings.php:274
 msgid "e.g. Hurry, offer ends soon!"
-msgstr "z.B. Beeile sich, das Angebot endet bald!"
+msgstr "p.ej. ¡Date prisa, la oferta termina pronto!"
 
 #: src/Admin/Settings.php:276
 msgid ""
 "Optional copy shown directly above the timer. Leave blank to show just the "
 "clock."
 msgstr ""
-"Optionale Kopie direkt über dem Timer angezeigt. Lass das Feld leer, um nur "
-"die Uhr anzuzeigen."
+"Copia opcional que se muestra directamente encima del temporizador. Déjelo "
+"en blanco para mostrar solo el reloj."
 
 #: src/Admin/Settings.php:291
 msgid ""
 "How the remaining time is displayed. Compact drops seconds for a calmer look "
 "on multi-day campaigns."
 msgstr ""
-"Wie die verbleibende Zeit angezeigt wird. Compact sorgt für einen ruhigeren "
-"Look bei mehrtägigen Kampagnen."
+"Cómo se muestra el tiempo restante. El modo compacto omite los segundos para "
+"un aspecto más tranquilo en campañas de varios días."
 
 #: src/Admin/Settings.php:293
 msgid "Looks like:"
-msgstr "Sieht aus wie:"
+msgstr "Parece:"
 
 #: src/Admin/Settings.php:318
 msgid "Where the timer is inserted on the single product page."
-msgstr "Wo der Timer auf der einzelnen Produktseite eingefügt wird."
+msgstr "Donde se inserta el temporizador en la página de un solo producto."
 
 #: src/Admin/Settings.php:334 src/Service/CountdownService.php:155
 msgid "This sale has ended."
-msgstr "Dieser Verkauf ist beendet."
+msgstr "Esta venta ha finalizado."
 
 #: src/Admin/Settings.php:336
 msgid ""
 "Shown in place of the clock once the countdown reaches zero. Leave blank for "
 "the default message."
 msgstr ""
-"Wird anstelle der Uhr angezeigt, sobald der Countdown Null erreicht. Für die "
-"Standardnachricht leer lassen."
+"Se muestra en lugar del reloj una vez que la cuenta regresiva llega a cero. "
+"Déjelo en blanco para el mensaje predeterminado."
 
 #: src/Admin/Settings.php:350
 msgid ""
 "A live sale countdown for your product pages. The defaults below work out of "
 "the box, adjust only what you need."
 msgstr ""
-"Ein Live-Sale-Countdown für deine Produktseiten. Die folgenden "
-"Standardeinstellungen funktionieren sofort. Passe nur das an, was du "
-"benötigen."
+"Una cuenta regresiva de ventas en vivo para las páginas de sus productos. "
+"Los valores predeterminados a continuación funcionan de inmediato, ajuste "
+"solo lo que necesite."
 
 #: templates/single-product/countdown.php:40
 msgid "Sale countdown"
-msgstr "Countdown zum Verkauf"
+msgstr "Cuenta regresiva de venta"
 
 #. translators: %s is the remaining sale time, e.g. "2 hrs 5 min".
 #: templates/single-product/countdown.php:74
 msgid "Sale ends in %s"
-msgstr "Angebot endet in %s"
+msgstr "La venta finaliza en %s"
 
 #: templates/single-product/countdown.php:78
 msgid "Sale ends in"
-msgstr "Der Verkauf endet in"
+msgstr "La venta termina en"
 
 #: templates/single-product/countdown.php:82
 msgid "days"
-msgstr "Tage"
+msgstr "días"
 
 #: templates/single-product/countdown.php:87
 msgid "hrs"
-msgstr "Std"
+msgstr "horas"
 
 #: templates/single-product/countdown.php:92
 msgid "min"
-msgstr "min"
+msgstr "mín."
 
 #: templates/single-product/countdown.php:97
 msgid "sec"
-msgstr "Sek"
+msgstr "segundo"
 
 #: ticker.php:55
 msgid ""
 "Ticker - Sales Countdown Timer for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Ticker, Verkaufs-Countdown-Timer für WooCommerce erfordert, dass "
-"WooCommerce aktiv ist."
+"Ticker: el temporizador de cuenta regresiva de ventas para WooCommerce "
+"requiere que WooCommerce esté activo."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr "Demnächst"
+msgstr "Próximamente"
 
 #: src/Admin/ProUpsell.php:78
 msgid "Coming soon"
-msgstr "Demnächst"
+msgstr "Próximamente"
 
 #. translators: %d: yearly price in PLN
 #: src/Admin/ProUpsell.php:83
 #, php-format
 msgid "od %d zł/rok"
-msgstr "ab %d zł/Jahr"
+msgstr "desde %d zł/año"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Admin/ProUpsell.php:88
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr "ab %1$s%2$d/Jahr"
+msgstr "desde %1$s%2$d/año"
 
 #: src/Admin/ProUpsell.php:97
 msgid "Upgrade to PRO"
-msgstr "Auf PRO upgraden"
+msgstr "Mejora a PRO"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
+msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:98
 msgid "Get notified"
-msgstr "Benachrichtige mich"
+msgstr "Avísame"
 
 #: src/Admin/ProUpsell.php:128
 msgid "Permission denied."
-msgstr "Zugriff verweigert."
+msgstr "Permiso denegado."
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:158
 #, php-format
 msgid "Do more with %s"
-msgstr "Mehr erreichen mit %s"
+msgstr "Haz más con %s"
 
 #: src/Admin/ProUpsell.php:165
 msgid "Dismiss this notice"
-msgstr "Diesen Hinweis ausblenden"
+msgstr "Descartar este aviso"
 
 #: src/Admin/ProUpsell.php:182
 msgid "Unlock every PRO feature"
-msgstr "Alle PRO-Funktionen freischalten"
+msgstr "Desbloquea todas las funciones PRO"
 
 #: src/Admin/ProUpsell.php:195
 msgid "one licence, every PRO feature"
-msgstr "eine Lizenz, alle PRO-Funktionen"
+msgstr "una licencia, todas las funciones PRO"
 
 #. translators: %s: PRO edition name
 #: src/Admin/ProUpsell.php:214
 #, php-format
 msgid "What %s adds"
-msgstr "Was %s ergänzt"
+msgstr "Lo que añade %s"

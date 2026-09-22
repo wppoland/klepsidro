@@ -2,8 +2,8 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Ticker - Countdown Timer for WooCommerce 1.0.8\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-ticker\n"
+"Project-Id-Version: Klepsidro - Countdown Timer for WooCommerce 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/klepsidro\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,35 +12,35 @@ msgstr ""
 "POT-Creation-Date: 2026-09-09T14:38:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-ticker\n"
+"X-Domain: klepsidro\n"
 
 #. Plugin Name of the plugin
-#: plogins-ticker.php
-msgid "Plogins Ticker - Countdown Timer for WooCommerce"
+#: klepsidro.php
+msgid "Klepsidro - Countdown Timer for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-ticker.php
+#: klepsidro.php
 msgid "https://plogins.com/plogins-ticker/"
 msgstr ""
 
 #. Description of the plugin
-#: plogins-ticker.php
+#: klepsidro.php
 msgid "Show a live sale countdown timer on WooCommerce product pages to create urgency and turn browsers into buyers."
 msgstr ""
 
 #. Author of the plugin
-#: plogins-ticker.php
+#: klepsidro.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: plogins-ticker.php
+#: klepsidro.php
 msgid "https://wppoland.com"
 msgstr ""
 
-#: plogins-ticker.php:56
-msgid "Ticker - Sales Countdown Timer for WooCommerce requires WooCommerce to be active."
+#: klepsidro.php:56
+msgid "Klepsidro - Countdown Timer for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
 #: src/Admin/ProUpsell.php:78
@@ -98,11 +98,11 @@ msgid "What %s adds"
 msgstr ""
 
 #: src/Admin/Settings.php:63
-msgid "Ticker Settings"
+msgid "Klepsidro Settings"
 msgstr ""
 
 #: src/Admin/Settings.php:64
-msgid "Ticker"
+msgid "Klepsidro"
 msgstr ""
 
 #: src/Admin/Settings.php:96

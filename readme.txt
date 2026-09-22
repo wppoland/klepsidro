@@ -1,10 +1,10 @@
-=== Plogins Ticker - Countdown Timer for WooCommerce ===
+=== Klepsidro - Countdown Timer for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.10
+Stable tag: 1.1.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Adds a live sale countdown to WooCommerce product pages. No jQuery, no layout sh
 
 == Description ==
 
-Ticker shows how much time is left on a sale, right on the product page. It reads the end time from each product's WooCommerce sale dates, or from a single campaign date you set for the whole store, and counts down to it.
+Klepsidro shows how much time is left on a sale, right on the product page. It reads the end time from each product's WooCommerce sale dates, or from a single campaign date you set for the whole store, and counts down to it.
 
 The end time is worked out on the server, so there is one source of truth and a visitor's wrong system clock can't change when the sale actually ends. The browser only formats the remaining time, using a small vanilla-JavaScript script with no jQuery and no other dependencies.
 
@@ -35,10 +35,10 @@ Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticke
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
-2. Upload the `ticker` folder to `/wp-content/plugins/`, or install it from the Plugins screen.
-3. Activate Ticker through the **Plugins** screen.
-4. Go to **WooCommerce > Ticker** and tick "Enable countdown".
-5. Set a sale end date on a product (Product data > General > Sale price dates), or set a campaign end date in Ticker's settings. The countdown then appears on the product page.
+2. Upload the `klepsidro` folder to `/wp-content/plugins/`, or install it from the Plugins screen.
+3. Activate Klepsidro through the **Plugins** screen.
+4. Go to **WooCommerce > Klepsidro** and tick "Enable countdown".
+5. Set a sale end date on a product (Product data > General > Sale price dates), or set a campaign end date in Klepsidro's settings. The countdown then appears on the product page.
 
 == Frequently Asked Questions ==
 
@@ -50,11 +50,11 @@ Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticke
 * **Bug reports and feature requests**: [github.com/wppoland/plogins-ticker/issues](https://github.com/wppoland/plogins-ticker/issues)
 
 
-= Does Ticker need WooCommerce? =
-Yes. It hooks into WooCommerce product pages and sale dates, and needs WooCommerce 8.0 or later. If WooCommerce isn't active, Ticker stays quiet and shows an admin notice.
+= Does Klepsidro need WooCommerce? =
+Yes. It hooks into WooCommerce product pages and sale dates, and needs WooCommerce 8.0 or later. If WooCommerce isn't active, Klepsidro stays quiet and shows an admin notice.
 
 = Where does the end time come from? =
-By default Ticker reads each product's "Sale price dates > To" value. You can switch the source to a single campaign date that applies across the store, or leave it on the sale date and set a campaign date as well: the product's own sale end is used when it has one, otherwise the campaign date.
+By default Klepsidro reads each product's "Sale price dates > To" value. You can switch the source to a single campaign date that applies across the store, or leave it on the sale date and set a campaign date as well: the product's own sale end is used when it has one, otherwise the campaign date.
 
 = Will the timer move my page content around? =
 No. The countdown is rendered on the server with the digit boxes already sized, so the browser drops the numbers into reserved space instead of reflowing the page. That keeps Cumulative Layout Shift at zero for the timer.
@@ -65,8 +65,8 @@ The end moment is sent from the server as a fixed UTC timestamp. The browser onl
 = What shows after the sale ends? =
 The clock is hidden and replaced by a short "sale ended" line. You can set your own wording for it, or leave it on the default.
 
-= What happens when I delete Ticker? =
-Its two options are removed and no tables are left behind, since Ticker never creates any.
+= What happens when I delete Klepsidro? =
+Its two options are removed and no tables are left behind, since Klepsidro never creates any.
 
 
 = Does this plugin work on WordPress Multisite? =
@@ -80,13 +80,16 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Ticker does not connect to any external services. It resolves the countdown end time entirely on your own server from each product's WooCommerce "Sale price dates" or a store-wide campaign date you set, and its `assets/js/ticker.js` script only formats that time in the browser, with no requests to any third party. Your settings are stored in the `ticker_settings` and `ticker_db_version` options in your site's `wp_options` table; no custom tables are created and no data leaves your site.
+Klepsidro does not connect to any external services. It resolves the countdown end time entirely on your own server from each product's WooCommerce "Sale price dates" or a store-wide campaign date you set, and its `assets/js/ticker.js` script only formats that time in the browser, with no requests to any third party. Your settings are stored in the `ticker_settings` and `ticker_db_version` options in your site's `wp_options` table; no custom tables are created and no data leaves your site.
 
 == Translations ==
 
-Plogins Ticker is fully translatable and ships the `plogins-ticker.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Klepsidro is fully translatable and ships the `klepsidro.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Klepsidro. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Klepsidro is Esperanto for an hourglass. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.10 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.

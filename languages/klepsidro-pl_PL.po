@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: klepsidro.php
 msgid "Klepsidro - Countdown Timer for WooCommerce"
-msgstr ""
+msgstr "Ticker - Licznik odliczający dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: klepsidro.php
 msgid "https://plogins.com/plogins-ticker/"
-msgstr ""
+msgstr "https://plogins.com/plogins-ticker/"
 
 #. Description of the plugin
 #: klepsidro.php
@@ -51,7 +51,7 @@ msgstr "https://wppoland.com"
 msgid ""
 "Klepsidro - Countdown Timer for WooCommerce requires WooCommerce to be "
 "active."
-msgstr ""
+msgstr "Ticker - Licznik odliczający dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -109,11 +109,11 @@ msgstr "Co dodaje %s"
 
 #: src/Admin/Settings.php:63
 msgid "Klepsidro Settings"
-msgstr ""
+msgstr "Ustawienia Ticker"
 
 #: src/Admin/Settings.php:64
 msgid "Klepsidro"
-msgstr ""
+msgstr "Ticker"
 
 #: src/Admin/Settings.php:96
 msgid "WooCommerce sale end date"

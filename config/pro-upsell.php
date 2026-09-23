@@ -21,8 +21,8 @@ return [
     ],
     'features'   => [
         [
-            'en' => ['title' => 'Per-product campaign end date', 'desc' => 'A Ticker campaign end field on each product, countdown to a chosen date without native WooCommerce sale dates.'],
-            'pl' => ['title' => 'Data końca kampanii per produkt', 'desc' => 'Pole „Ticker campaign end” na karcie produktu, odliczanie do wybranej daty bez natywnych dat wyprzedaży WooCommerce.'],
+            'en' => ['title' => 'Per-product campaign end date', 'desc' => 'A Klepsidro campaign end field on each product, countdown to a chosen date without native WooCommerce sale dates.'],
+            'pl' => ['title' => 'Data końca kampanii per produkt', 'desc' => 'Pole „Klepsidro campaign end” na karcie produktu, odliczanie do wybranej daty bez natywnych dat wyprzedaży WooCommerce.'],
         ],
         [
             'en' => ['title' => 'Scheduled campaign windows', 'desc' => 'Hide the countdown before a global or per-product campaign start time.'],
@@ -33,16 +33,16 @@ return [
             'pl' => ['title' => 'Cykliczne kampanie odliczania', 'desc' => 'Tygodniowe lub miesięczne okna wyprzedaży, które resetują się automatycznie i ukrywają timer między cyklami.'],
         ],
         [
-            'en' => ['title' => 'Product targeting', 'desc' => 'Show or hide the countdown on selected products, categories or tags on WooCommerce > Ticker.'],
-            'pl' => ['title' => 'Targetowanie produktów', 'desc' => 'Pokaż lub ukryj odliczanie na wybranych produktach, kategoriach lub tagach na WooCommerce > Ticker.'],
+            'en' => ['title' => 'Product targeting', 'desc' => 'Show or hide the countdown on selected products, categories or tags on WooCommerce > Klepsidro.'],
+            'pl' => ['title' => 'Targetowanie produktów', 'desc' => 'Pokaż lub ukryj odliczanie na wybranych produktach, kategoriach lub tagach na WooCommerce > Klepsidro.'],
         ],
         [
-            'en' => ['title' => 'Countdown analytics', 'desc' => 'Track aggregate views and add-to-cart counts per product on WooCommerce > Ticker Analytics.'],
-            'pl' => ['title' => 'Analityka odliczania', 'desc' => 'Zliczaj wyświetlenia i dodania do koszyka per produkt na WooCommerce > Ticker Analytics.'],
+            'en' => ['title' => 'Countdown analytics', 'desc' => 'Track aggregate views and add-to-cart counts per product on WooCommerce > Klepsidro Analytics.'],
+            'pl' => ['title' => 'Analityka odliczania', 'desc' => 'Zliczaj wyświetlenia i dodania do koszyka per produkt na WooCommerce > Klepsidro Analytics.'],
         ],
         [
-            'en' => ['title' => 'Extends free Klepsidro', 'desc' => 'Requires the active free Ticker plugin; delivered through Freemius with licensing and automatic updates.'],
-            'pl' => ['title' => 'Rozszerza darmowy Klepsidro', 'desc' => 'Wymaga aktywnej darmowej wtyczki Ticker; dostarczany przez Freemius z licencją i automatycznymi aktualizacjami.'],
+            'en' => ['title' => 'Extends free Klepsidro', 'desc' => 'Requires the active free Klepsidro plugin; delivered through Freemius with licensing and automatic updates.'],
+            'pl' => ['title' => 'Rozszerza darmowy Klepsidro', 'desc' => 'Wymaga aktywnej darmowej wtyczki Klepsidro; dostarczany przez Freemius z licencją i automatycznymi aktualizacjami.'],
         ],
     ],
 ];

@@ -37,8 +37,8 @@ Quellcode und Issue-Tracker liegen auf GitHub: https://github.com/wppoland/plogi
 1. Installiere und aktiviere WooCommerce 8.0 oder neuer.
 2. Lade den Ordner `ticker` nach `/wp-content/plugins/` hoch oder installiere ihn über den Plugins-Bildschirm.
 3. Aktiviere Ticker über den Bildschirm <strong>Plugins</strong>.
-4. Gehe zu <strong>WooCommerce → Ticker</strong> und aktiviere „Countdown einschalten“.
-5. Lege auf einem Produkt ein Verkaufsende fest (Produktdaten → Allgemein → Verkaufspreis-Daten) oder ein Kampagnen-Enddatum in den Ticker-Einstellungen. Der Countdown erscheint dann auf der Produktseite.
+4. Gehe zu <strong>WooCommerce > Ticker</strong> und aktiviere „Countdown einschalten“.
+5. Lege auf einem Produkt ein Verkaufsende fest (Produktdaten > Allgemein > Verkaufspreis-Daten) oder ein Kampagnen-Enddatum in den Ticker-Einstellungen. Der Countdown erscheint dann auf der Produktseite.
 
 == Frequently Asked Questions ==
 
@@ -54,7 +54,7 @@ Quellcode und Issue-Tracker liegen auf GitHub: https://github.com/wppoland/plogi
 Ja. Es bindet sich in WooCommerce-Produktseiten und Verkaufsdaten ein und benötigt WooCommerce 8.0 oder neuer. Wenn WooCommerce nicht aktiv ist, bleibt Ticker still und zeigt einen Admin-Hinweis.
 
 = Where does the end time come from? =
-Standardmäßig liest Ticker den Wert „Verkaufspreis-Daten → Bis“ jedes Produkts. Du kannst die Quelle auf ein einziges Kampagnen-Datum für den gesamten Shop umstellen oder beim Verkaufsdatum bleiben und zusätzlich ein Kampagnen-Datum setzen: Das eigene Verkaufsende des Produkts wird verwendet, wenn eines gesetzt ist, andernfalls das Kampagnen-Datum.
+Standardmäßig liest Ticker den Wert „Verkaufspreis-Daten > Bis“ jedes Produkts. Du kannst die Quelle auf ein einziges Kampagnen-Datum für den gesamten Shop umstellen oder beim Verkaufsdatum bleiben und zusätzlich ein Kampagnen-Datum setzen: Das eigene Verkaufsende des Produkts wird verwendet, wenn eines gesetzt ist, andernfalls das Kampagnen-Datum.
 
 = Will the timer move my page content around? =
 Nein. Der Countdown wird serverseitig mit bereits dimensionierten Ziffernfeldern gerendert, sodass der Browser die Zahlen in reservierten Platz setzt, statt die Seite neu zu fließen. Das hält den Cumulative Layout Shift für den Timer bei null.

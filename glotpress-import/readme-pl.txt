@@ -37,8 +37,8 @@ Kod źródłowy i tracker zgłoszeń są na GitHubie: https://github.com/wppolan
 1. Zainstaluj i włącz WooCommerce 8.0 lub nowsze.
 2. Prześlij folder `ticker` do `/wp-content/plugins/` albo zainstaluj go z ekranu Wtyczki.
 3. Aktywuj Ticker na ekranie <strong>Wtyczki</strong>.
-4. Przejdź do <strong>WooCommerce → Ticker</strong> i zaznacz „Włącz odliczanie”.
-5. Ustaw datę końca promocji na produkcie (Dane produktu → Ogólne → Daty ceny promocyjnej) albo datę końca kampanii w ustawieniach Ticker. Odliczanie pojawi się na stronie produktu.
+4. Przejdź do <strong>WooCommerce > Ticker</strong> i zaznacz „Włącz odliczanie”.
+5. Ustaw datę końca promocji na produkcie (Dane produktu > Ogólne > Daty ceny promocyjnej) albo datę końca kampanii w ustawieniach Ticker. Odliczanie pojawi się na stronie produktu.
 
 == Frequently Asked Questions ==
 
@@ -54,7 +54,7 @@ Kod źródłowy i tracker zgłoszeń są na GitHubie: https://github.com/wppolan
 Tak. Podpina się pod strony produktów i daty promocji WooCommerce i wymaga WooCommerce 8.0 lub nowszego. Gdy WooCommerce nie jest aktywne, Ticker pozostaje cichy i pokazuje powiadomienie w panelu.
 
 = Where does the end time come from? =
-Domyślnie Ticker odczytuje wartość „Daty ceny promocyjnej → Do” każdego produktu. Możesz przełączyć źródło na jedną datę kampanii obowiązującą w całym sklepie albo zostawić datę promocji i dodatkowo ustawić datę kampanii: używana jest własna data końca promocji produktu, gdy jest ustawiona, w przeciwnym razie data kampanii.
+Domyślnie Ticker odczytuje wartość „Daty ceny promocyjnej > Do” każdego produktu. Możesz przełączyć źródło na jedną datę kampanii obowiązującą w całym sklepie albo zostawić datę promocji i dodatkowo ustawić datę kampanii: używana jest własna data końca promocji produktu, gdy jest ustawiona, w przeciwnym razie data kampanii.
 
 = Will the timer move my page content around? =
 Nie. Odliczanie jest renderowane po stronie serwera z już wymiarowanymi polami cyfr, więc przeglądarka wstawia liczby w zarezerwowane miejsce zamiast przebudowywać stronę. Dzięki temu Cumulative Layout Shift dla timera wynosi zero.

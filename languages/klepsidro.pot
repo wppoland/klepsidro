@@ -1,0 +1,283 @@
+# Copyright (C) 2026 WPPoland.com
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Klepsidro - Countdown Timer for WooCommerce 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/klepsidro\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-09T14:38:03+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: klepsidro\n"
+
+#. Plugin Name of the plugin
+#: klepsidro.php
+msgid "Klepsidro - Countdown Timer for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: klepsidro.php
+msgid "https://plogins.com/plogins-ticker/"
+msgstr ""
+
+#. Description of the plugin
+#: klepsidro.php
+msgid "Show a live sale countdown timer on WooCommerce product pages to create urgency and turn browsers into buyers."
+msgstr ""
+
+#. Author of the plugin
+#: klepsidro.php
+msgid "WPPoland.com"
+msgstr ""
+
+#. Author URI of the plugin
+#: klepsidro.php
+msgid "https://wppoland.com"
+msgstr ""
+
+#: klepsidro.php:56
+msgid "Klepsidro - Countdown Timer for WooCommerce requires WooCommerce to be active."
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:94
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:124
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr ""
+
+#: src/Admin/Settings.php:63
+msgid "Klepsidro Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:64
+msgid "Klepsidro"
+msgstr ""
+
+#: src/Admin/Settings.php:96
+msgid "WooCommerce sale end date"
+msgstr ""
+
+#: src/Admin/Settings.php:97
+msgid "Fixed campaign end date"
+msgstr ""
+
+#: src/Admin/Settings.php:108
+msgid "Days : Hours : Minutes : Seconds"
+msgstr ""
+
+#: src/Admin/Settings.php:109
+msgid "Hours : Minutes : Seconds"
+msgstr ""
+
+#: src/Admin/Settings.php:110
+msgid "Hours : Minutes (compact)"
+msgstr ""
+
+#: src/Admin/Settings.php:121
+msgid "Product summary (below price)"
+msgstr ""
+
+#: src/Admin/Settings.php:122
+msgid "Before the add-to-cart form"
+msgstr ""
+
+#: src/Admin/Settings.php:123
+msgid "After the add-to-cart form"
+msgstr ""
+
+#: src/Admin/Settings.php:124
+msgid "Product meta area"
+msgstr ""
+
+#: src/Admin/Settings.php:143
+msgid "When the countdown runs"
+msgstr ""
+
+#: src/Admin/Settings.php:146
+msgid "Create urgency with a live countdown"
+msgstr ""
+
+#: src/Admin/Settings.php:147
+msgid "Show a ticking countdown to the end of a sale on your product pages. The timer is calculated on the server and counted down in the browser, no layout shift, no jQuery."
+msgstr ""
+
+#: src/Admin/Settings.php:152
+msgid "Decide whether the timer shows and where its end time comes from."
+msgstr ""
+
+#: src/Admin/Settings.php:162
+msgid "How it reads"
+msgstr ""
+
+#: src/Admin/Settings.php:164
+msgid "Tune the wording and the level of detail shoppers see. Sensible defaults already work, change these only to match your store’s voice."
+msgstr ""
+
+#: src/Admin/Settings.php:174
+msgid "Where it appears"
+msgstr ""
+
+#: src/Admin/Settings.php:176
+msgid "Choose the spot on the single product page that fits your theme’s layout."
+msgstr ""
+
+#: src/Admin/Settings.php:185
+msgid "Enable countdown"
+msgstr ""
+
+#: src/Admin/Settings.php:186
+msgid "Countdown source"
+msgstr ""
+
+#: src/Admin/Settings.php:187
+msgid "Campaign end date"
+msgstr ""
+
+#: src/Admin/Settings.php:188
+msgid "Heading"
+msgstr ""
+
+#: src/Admin/Settings.php:189
+msgid "Time format"
+msgstr ""
+
+#: src/Admin/Settings.php:190
+msgid "Expired message"
+msgstr ""
+
+#: src/Admin/Settings.php:191
+msgid "Placement"
+msgstr ""
+
+#: src/Admin/Settings.php:232
+msgid "Show the sale countdown timer on single product pages."
+msgstr ""
+
+#: src/Admin/Settings.php:234
+msgid "Master switch. When off, no countdown is rendered anywhere."
+msgstr ""
+
+#: src/Admin/Settings.php:249
+msgid "Where the end time comes from. The sale date is read per product; the campaign date applies store-wide and is also used as a fallback when a product has no sale end date."
+msgstr ""
+
+#. translators: %s: the site timezone string, e.g. Europe/Warsaw or UTC+2.
+#: src/Admin/Settings.php:269
+#, php-format
+msgid "Interpreted in your site timezone (%s)."
+msgstr ""
+
+#: src/Admin/Settings.php:289
+msgid "e.g. Hurry, offer ends soon!"
+msgstr ""
+
+#: src/Admin/Settings.php:291
+msgid "Optional copy shown directly above the timer. Leave blank to show just the clock."
+msgstr ""
+
+#: src/Admin/Settings.php:306
+msgid "How the remaining time is displayed. Compact drops seconds for a calmer look on multi-day campaigns."
+msgstr ""
+
+#: src/Admin/Settings.php:308
+msgid "Looks like:"
+msgstr ""
+
+#: src/Admin/Settings.php:333
+msgid "Where the timer is inserted on the single product page."
+msgstr ""
+
+#: src/Admin/Settings.php:349
+#: src/Service/CountdownService.php:155
+msgid "This sale has ended."
+msgstr ""
+
+#: src/Admin/Settings.php:351
+msgid "Shown in place of the clock once the countdown reaches zero. Leave blank for the default message."
+msgstr ""
+
+#: src/Admin/Settings.php:368
+msgid "A live sale countdown for your product pages. The defaults below work out of the box, adjust only what you need."
+msgstr ""
+
+#: templates/single-product/countdown.php:40
+msgid "Sale countdown"
+msgstr ""
+
+#. translators: %s is the remaining sale time, e.g. "2 hrs 5 min".
+#: templates/single-product/countdown.php:74
+#, php-format
+msgid "Sale ends in %s"
+msgstr ""
+
+#: templates/single-product/countdown.php:78
+msgid "Sale ends in"
+msgstr ""
+
+#: templates/single-product/countdown.php:82
+msgid "days"
+msgstr ""
+
+#: templates/single-product/countdown.php:87
+msgid "hrs"
+msgstr ""
+
+#: templates/single-product/countdown.php:92
+msgid "min"
+msgstr ""
+
+#: templates/single-product/countdown.php:97
+msgid "sec"
+msgstr ""

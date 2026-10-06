@@ -164,9 +164,12 @@
 	 * @param {HTMLElement} el Countdown root.
 	 */
 	function expire( el ) {
-		if ( el.classList.contains( 'is-expired' ) ) {
+		// Guard on our own flag, not is-expired: the server already sets that
+		// class when the sale ended before the page loaded.
+		if ( el.hasAttribute( 'data-ticker-done' ) ) {
 			return;
 		}
+		el.setAttribute( 'data-ticker-done', '1' );
 		el.classList.add( 'is-expired' );
 
 		// Announce expiry once through the polite status (a sibling of the

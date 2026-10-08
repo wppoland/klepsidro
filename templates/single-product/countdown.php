@@ -51,7 +51,7 @@ $ticker_show_seconds = 'compact' !== $ticker_format;
 			<p class="ticker__heading"><?php echo esc_html( $ticker_heading ); ?></p>
 		<?php endif; ?>
 
-		<p class="ticker__expired" hidden<?php echo $ticker_is_expired ? ' data-active="1"' : ''; ?>>
+		<p class="ticker__expired"<?php echo $ticker_is_expired ? ' data-active="1"' : ' hidden'; ?>>
 			<?php echo esc_html( $ticker_expired_message ); ?>
 		</p>
 

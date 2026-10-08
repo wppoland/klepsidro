@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Ticker - Sales Countdown Timer for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/klepsidro\n"
-"POT-Creation-Date: 2026-09-09T14:38:03+00:00\n"
+"POT-Creation-Date: 2026-10-05T11:15:20+00:00\n"
 "PO-Revision-Date: 2026-06-15 12:00+0000\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -54,56 +54,48 @@ msgstr ""
 "Klepsidro - Licznik odliczający dla WooCommerce wymaga aktywnego "
 "WooCommerce."
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Wkrótce"
-
-#: src/Admin/ProUpsell.php:78
+#: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
 msgstr "Wkrótce"
 
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
+#: src/Admin/ProUpsell.php:91
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "od %1$s%2$d/rok"
 
-#: src/Admin/ProUpsell.php:93
+#: src/Admin/ProUpsell.php:100
 msgid "Upgrade to PRO"
 msgstr "Przejdź na PRO"
 
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Powiadom mnie"
-
-#: src/Admin/ProUpsell.php:94
+#: src/Admin/ProUpsell.php:101
 msgid "Get notified"
 msgstr "Powiadom mnie"
 
-#: src/Admin/ProUpsell.php:124
+#: src/Admin/ProUpsell.php:131
 msgid "Permission denied."
 msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:154
+#: src/Admin/ProUpsell.php:161
 #, php-format
 msgid "Do more with %s"
 msgstr "Zrób więcej dzięki %s"
 
-#: src/Admin/ProUpsell.php:161
+#: src/Admin/ProUpsell.php:168
 msgid "Dismiss this notice"
 msgstr "Odrzuć to powiadomienie"
 
-#: src/Admin/ProUpsell.php:178
+#: src/Admin/ProUpsell.php:190
 msgid "Unlock every PRO feature"
 msgstr "Odblokuj wszystkie funkcje PRO"
 
-#: src/Admin/ProUpsell.php:191
+#: src/Admin/ProUpsell.php:203
 msgid "one licence, every PRO feature"
 msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
+#: src/Admin/ProUpsell.php:222
 #, php-format
 msgid "What %s adds"
 msgstr "Co dodaje %s"
@@ -152,15 +144,15 @@ msgstr "Za formularzem dodawania do koszyka"
 msgid "Product meta area"
 msgstr "Obszar metadanych produktu"
 
-#: src/Admin/Settings.php:143
+#: src/Admin/Settings.php:152
 msgid "When the countdown runs"
 msgstr "Kiedy odliczanie trwa"
 
-#: src/Admin/Settings.php:146
+#: src/Admin/Settings.php:155
 msgid "Create urgency with a live countdown"
 msgstr "Buduj poczucie pilności dzięki odliczaniu na żywo"
 
-#: src/Admin/Settings.php:147
+#: src/Admin/Settings.php:156
 msgid ""
 "Show a ticking countdown to the end of a sale on your product pages. The "
 "timer is calculated on the server and counted down in the browser, no layout"
@@ -170,17 +162,17 @@ msgstr ""
 "produktów. Zegar jest obliczany na serwerze i odliczany w przeglądarce, bez "
 "przesunięć układu, bez jQuery."
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:161
 msgid "Decide whether the timer shows and where its end time comes from."
 msgstr ""
 "Zdecyduj, czy licznik czasu ma się wyświetlać i skąd pochodzi jego godzina "
 "zakończenia."
 
-#: src/Admin/Settings.php:162
+#: src/Admin/Settings.php:171
 msgid "How it reads"
 msgstr "Jak to się czyta"
 
-#: src/Admin/Settings.php:164
+#: src/Admin/Settings.php:173
 msgid ""
 "Tune the wording and the level of detail shoppers see. Sensible defaults "
 "already work, change these only to match your store’s voice."
@@ -189,57 +181,57 @@ msgstr ""
 "ustawienia domyślne już działają, zmień je tylko tak, aby pasowały do głosu "
 "Twojego sklepu."
 
-#: src/Admin/Settings.php:174
+#: src/Admin/Settings.php:183
 msgid "Where it appears"
 msgstr "Gdzie się pojawia"
 
-#: src/Admin/Settings.php:176
+#: src/Admin/Settings.php:185
 msgid ""
 "Choose the spot on the single product page that fits your theme’s layout."
 msgstr ""
 "Wybierz miejsce na stronie pojedynczego produktu, które pasuje do układu "
 "Twojego motywu."
 
-#: src/Admin/Settings.php:185
+#: src/Admin/Settings.php:194
 msgid "Enable countdown"
 msgstr "Włącz odliczanie"
 
-#: src/Admin/Settings.php:186
+#: src/Admin/Settings.php:195
 msgid "Countdown source"
 msgstr "Źródło odliczania"
 
-#: src/Admin/Settings.php:187
+#: src/Admin/Settings.php:196
 msgid "Campaign end date"
 msgstr "Data zakończenia kampanii"
 
-#: src/Admin/Settings.php:188
+#: src/Admin/Settings.php:197
 msgid "Heading"
 msgstr "Nagłówek"
 
-#: src/Admin/Settings.php:189
+#: src/Admin/Settings.php:198
 msgid "Time format"
 msgstr "Format czasu"
 
-#: src/Admin/Settings.php:190
+#: src/Admin/Settings.php:199
 msgid "Expired message"
 msgstr "Komunikat po wygaśnięciu"
 
-#: src/Admin/Settings.php:191
+#: src/Admin/Settings.php:200
 msgid "Placement"
 msgstr "Umiejscowienie"
 
-#: src/Admin/Settings.php:232
+#: src/Admin/Settings.php:241
 msgid "Show the sale countdown timer on single product pages."
 msgstr ""
 "Wyświetlaj zegar odliczający do końca promocji na stronach pojedynczych "
 "produktów."
 
-#: src/Admin/Settings.php:234
+#: src/Admin/Settings.php:243
 msgid "Master switch. When off, no countdown is rendered anywhere."
 msgstr ""
 "Główny przełącznik. Po wyłączeniu odliczanie nie jest renderowane nigdzie."
 
-#: src/Admin/Settings.php:249
+#: src/Admin/Settings.php:258
 msgid ""
 "Where the end time comes from. The sale date is read per product; the "
 "campaign date applies store-wide and is also used as a fallback when a "
@@ -250,16 +242,16 @@ msgstr ""
 "używana zastępczo, gdy produkt nie ma daty zakończenia promocji."
 
 #. translators: %s: the site timezone string, e.g. Europe/Warsaw or UTC+2.
-#: src/Admin/Settings.php:269
+#: src/Admin/Settings.php:278
 #, php-format
 msgid "Interpreted in your site timezone (%s)."
 msgstr "Interpretowane w strefie czasowej Twojej witryny (%s)."
 
-#: src/Admin/Settings.php:289
+#: src/Admin/Settings.php:298
 msgid "e.g. Hurry, offer ends soon!"
 msgstr "np. Pospiesz się, oferta wkrótce się kończy!"
 
-#: src/Admin/Settings.php:291
+#: src/Admin/Settings.php:300
 msgid ""
 "Optional copy shown directly above the timer. Leave blank to show just the "
 "clock."
@@ -267,7 +259,7 @@ msgstr ""
 "Opcjonalny tekst wyświetlany bezpośrednio nad zegarem. Pozostaw puste, aby "
 "pokazać sam zegar."
 
-#: src/Admin/Settings.php:306
+#: src/Admin/Settings.php:315
 msgid ""
 "How the remaining time is displayed. Compact drops seconds for a calmer look"
 " on multi-day campaigns."
@@ -275,19 +267,19 @@ msgstr ""
 "Sposób wyświetlania pozostałego czasu. Compact traci sekundy, zapewniając "
 "spokojniejszy wygląd w kampaniach wielodniowych."
 
-#: src/Admin/Settings.php:308
+#: src/Admin/Settings.php:317
 msgid "Looks like:"
 msgstr "Wygląda jak:"
 
-#: src/Admin/Settings.php:333
+#: src/Admin/Settings.php:342
 msgid "Where the timer is inserted on the single product page."
 msgstr "Gdzie zegar jest umieszczany na stronie pojedynczego produktu."
 
-#: src/Admin/Settings.php:349 src/Service/CountdownService.php:155
+#: src/Admin/Settings.php:358 src/Service/CountdownService.php:155
 msgid "This sale has ended."
 msgstr "Ta promocja się zakończyła."
 
-#: src/Admin/Settings.php:351
+#: src/Admin/Settings.php:360
 msgid ""
 "Shown in place of the clock once the countdown reaches zero. Leave blank for"
 " the default message."
@@ -295,7 +287,7 @@ msgstr ""
 "Wyświetlane zamiast zegara, gdy odliczanie osiągnie zero. Pozostaw puste, "
 "aby użyć domyślnego komunikatu."
 
-#: src/Admin/Settings.php:368
+#: src/Admin/Settings.php:377
 msgid ""
 "A live sale countdown for your product pages. The defaults below work out of"
 " the box, adjust only what you need."
@@ -333,6 +325,12 @@ msgstr "min"
 #: templates/single-product/countdown.php:97
 msgid "sec"
 msgstr "sek."
+
+#~ msgid "Wkrótce"
+#~ msgstr "Wkrótce"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Powiadom mnie"
 
 #~ msgid "Ticker - Sales Countdown Timer for WooCommerce"
 #~ msgstr "Ticker - Zegar odliczający do końca promocji dla WooCommerce"

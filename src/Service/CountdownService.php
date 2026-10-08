@@ -235,14 +235,27 @@ final class CountdownService implements HasHooks {
 			return null;
 		}
 
-		$date = $product->get_date_on_sale_to();
+		// A variable product keeps its sale dates on the variations, so the
+		// parent has none: count down to the earliest end among on-sale children.
+		$candidates = $product instanceof \WC_Product_Variable
+			? array_map( 'wc_get_product', $product->get_children() )
+			: array( $product );
 
-		if ( $date instanceof \WC_DateTime ) {
-			$ts = $date->getTimestamp();
-			return $ts > 0 ? $ts : null;
+		$end = null;
+		foreach ( $candidates as $candidate ) {
+			if ( ! $candidate instanceof \WC_Product || ! $candidate->is_on_sale() ) {
+				continue;
+			}
+
+			$date = $candidate->get_date_on_sale_to();
+			$ts   = $date instanceof \WC_DateTime ? $date->getTimestamp() : 0;
+
+			if ( $ts > 0 && ( null === $end || $ts < $end ) ) {
+				$end = $ts;
+			}
 		}
 
-		return null;
+		return $end;
 	}
 
 	/**

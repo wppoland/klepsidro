@@ -4,7 +4,7 @@ Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -19,7 +19,7 @@ The end time is worked out on the server, so there is one source of truth and a 
 
 The countdown is built around the WooCommerce sale you already run, so there is nothing extra to schedule:
 
-* Reads each product's native "Sale price dates" out of the box. Set a sale end date and the countdown shows up on that product.
+* Reads each product's native "Sale price dates" out of the box. Set a sale end date and the countdown shows up on that product. On a variable product it counts down to the earliest sale end among its variations.
 * Or set one store-wide campaign end date if you'd rather count everything down to the same moment. You can mix the two: the per-product sale date wins, and the campaign date fills in for products that don't have one.
 * Pick where the timer goes: the product summary (below the price), before or after the add-to-cart form, or the product meta area.
 * Three time formats: days/hours/minutes/seconds, hours/minutes/seconds, or a compact hours/minutes that drops the ticking seconds on longer campaigns.
@@ -66,7 +66,7 @@ The end moment is sent from the server as a fixed UTC timestamp. The browser onl
 The clock is hidden and replaced by a short "sale ended" line. You can set your own wording for it, or leave it on the default.
 
 = What happens when I delete Klepsidro? =
-Its two options are removed and no tables are left behind, since Klepsidro never creates any.
+Its two options are removed, on every site of a multisite network, and no tables are left behind, since Klepsidro never creates any.
 
 
 = Does this plugin work on WordPress Multisite? =
@@ -87,6 +87,12 @@ Klepsidro does not connect to any external services. It resolves the countdown e
 Klepsidro is fully translatable and ships the `klepsidro.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.3 =
+* Fixed: the time format setting had no visible effect. The countdown's own layout styles kept the days and seconds boxes on screen, so the hours/minutes/seconds and compact formats still showed them.
+* Fixed: a sale that had already ended when the page loaded showed a frozen "-- days -- hrs" clock instead of the sale-ended message.
+* Fixed: variable products on sale never got a countdown, because their sale dates live on the variations. The countdown now runs to the earliest sale end among the variations on sale.
+* Fixed: deleting the plugin on a multisite network removed its settings from the current site only. They are now removed from every site.
 
 = 1.1.2 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

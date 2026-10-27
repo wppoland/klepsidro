@@ -32,6 +32,32 @@ The countdown is built around the WooCommerce sale you already run, so there is 
 
 Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticker](https://github.com/wppoland/plogins-ticker)
 
+== Klepsidro Pro ==
+
+Klepsidro Pro is a separate paid plugin that extends Klepsidro.
+
+Included in Klepsidro:
+
+* Sale countdown
+* Global campaign
+* Server-resolved end time
+* Placement choice
+* Three formats
+
+Klepsidro Pro adds:
+
+* Per-product campaign end date
+* Scheduled campaign windows
+* Recurring countdown campaigns
+* Product targeting
+* Countdown analytics
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Klepsidro Pro** - [plogins.com/plogins-ticker-pro/](https://plogins.com/plogins-ticker-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-ticker-pro/pricing/](https://plogins.com/plogins-ticker-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-ticker-pro/docs/](https://plogins.com/plogins-ticker-pro/docs/)
+
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.

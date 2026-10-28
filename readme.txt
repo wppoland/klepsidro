@@ -4,7 +4,7 @@ Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -30,7 +30,7 @@ The countdown is built around the WooCommerce sale you already run, so there is 
 * No custom database tables. Settings sit in `wp_options` and are deleted when you remove the plugin.
 * Declares HPOS and Cart/Checkout Blocks compatibility.
 
-Source code and issue tracker live on GitHub: [github.com/wppoland/plogins-ticker](https://github.com/wppoland/plogins-ticker)
+Source code and issue tracker live on GitHub: [github.com/wppoland/klepsidro](https://github.com/wppoland/klepsidro)
 
 == Klepsidro Pro ==
 
@@ -54,9 +54,9 @@ Klepsidro Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Klepsidro Pro** - [plogins.com/plogins-ticker-pro/](https://plogins.com/plogins-ticker-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-ticker-pro/pricing/](https://plogins.com/plogins-ticker-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-ticker-pro/docs/](https://plogins.com/plogins-ticker-pro/docs/)
+* **Klepsidro Pro** - [plogins.com/klepsidro-pro/](https://plogins.com/klepsidro-pro/)
+* **Compare editions and pricing** - [plogins.com/klepsidro-pro/pricing/](https://plogins.com/klepsidro-pro/pricing/)
+* **PRO documentation** - [plogins.com/klepsidro-pro/docs/](https://plogins.com/klepsidro-pro/docs/)
 
 == Installation ==
 
@@ -70,10 +70,10 @@ The free edition is not a trial and its features stay available without a time l
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-ticker/docs/](https://plogins.com/plogins-ticker/docs/)
-* **Plugin page**: [plogins.com/plogins-ticker/](https://plogins.com/plogins-ticker/)
-* **Source code**: [github.com/wppoland/plogins-ticker](https://github.com/wppoland/plogins-ticker)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-ticker/issues](https://github.com/wppoland/plogins-ticker/issues)
+* **Documentation**: [plogins.com/klepsidro/docs/](https://plogins.com/klepsidro/docs/)
+* **Plugin page**: [plogins.com/klepsidro/](https://plogins.com/klepsidro/)
+* **Source code**: [github.com/wppoland/klepsidro](https://github.com/wppoland/klepsidro)
+* **Bug reports and feature requests**: [github.com/wppoland/klepsidro/issues](https://github.com/wppoland/klepsidro/issues)
 
 
 = Does Klepsidro need WooCommerce? =
@@ -113,6 +113,9 @@ Klepsidro does not connect to any external services. It resolves the countdown e
 Klepsidro is fully translatable and ships the `klepsidro.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.4 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.3 =
 * Fixed: the time format setting had no visible effect. The countdown's own layout styles kept the days and seconds boxes on screen, so the hours/minutes/seconds and compact formats still showed them.

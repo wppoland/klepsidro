@@ -23,8 +23,8 @@ msgstr "Klepsidro - Countdown-Timer für WooCommerce"
 
 #. Plugin URI of the plugin
 #: klepsidro.php
-msgid "https://plogins.com/plogins-ticker/"
-msgstr "https://plogins.com/plogins-ticker/"
+msgid "https://plogins.com/klepsidro/"
+msgstr "https://plogins.com/klepsidro/"
 
 #. Description of the plugin
 #: klepsidro.php

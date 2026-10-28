@@ -4,14 +4,14 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-ticker-pro
+ * @package klepsidro-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Klepsidro Pro',
-    'url'        => 'https://plogins.com/plogins-ticker-pro/pricing/',
+    'url'        => 'https://plogins.com/klepsidro-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',

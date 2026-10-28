@@ -65,7 +65,7 @@ final class ProUpsell
 
     private function url(): string
     {
-        $default = (string) ($this->data()['url'] ?? 'https://plogins.com/plogins-ticker-pro/pricing/');
+        $default = (string) ($this->data()['url'] ?? 'https://plogins.com/klepsidro-pro/pricing/');
         /**
          * Filters the URL the PRO call-to-action buttons point at.
          *

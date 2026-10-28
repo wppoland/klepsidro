@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: klepsidro.php
-msgid "https://plogins.com/plogins-ticker/"
+msgid "https://plogins.com/klepsidro/"
 msgstr ""
 
 #. Description of the plugin

@@ -32,6 +32,10 @@ The countdown is built around the WooCommerce sale you already run, so there is 
 
 Source code and issue tracker live on GitHub: [github.com/wppoland/klepsidro](https://github.com/wppoland/klepsidro)
 
+= Works with other Plogins plugins =
+
+* [Rezervo - Pre-Orders for WooCommerce](https://plogins.com/rezervo/) - on a pre-order with a future release date, the countdown runs to the release day and reads "Releases in" instead of "Sale ends in" (Rezervo 1.1.5 or later).
+
 == Klepsidro Pro ==
 
 Klepsidro Pro is a separate paid plugin that extends Klepsidro.
@@ -94,6 +98,10 @@ The clock is hidden and replaced by a short "sale ended" line. You can set your 
 = What happens when I delete Klepsidro? =
 Its two options are removed, on every site of a multisite network, and no tables are left behind, since Klepsidro never creates any.
 
+
+= Does it work with Rezervo? =
+
+Yes, with no setting. On a Rezervo pre-order whose release date is still ahead, the countdown runs to 00:00 (store timezone) on the release day, even when the product is not on sale, and reads "Releases in". When the release date is today or past, or missing, Klepsidro uses its own countdown source as before.
 
 = Does this plugin work on WordPress Multisite? =
 

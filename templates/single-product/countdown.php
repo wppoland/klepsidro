@@ -8,6 +8,13 @@
  * @var string   $ticker_expired_message Message shown when the sale has ended.
  * @var int      $ticker_now             Current server timestamp (UTC).
  * @var int      $ticker_product_id      Current product ID.
+ * @var string   $ticker_lead            Optional: text before the digits, default "Sale ends in".
+ * @var string   $ticker_announce        Optional: screen-reader phrase with %s for the remaining time.
+ * @var string   $ticker_label           Optional: accessible name of the countdown group.
+ *
+ * The three optional strings let another plugin reuse the timer for a date
+ * that is not a sale end (Rezervo counts down to a pre-order release) through
+ * the `ticker/template/args` filter.
  *
  * @package Ticker/Templates
  */
@@ -24,6 +31,10 @@ $ticker_heading         = isset( $ticker_heading ) ? (string) $ticker_heading : 
 $ticker_expired_message = isset( $ticker_expired_message ) ? (string) $ticker_expired_message : '';
 $ticker_now             = isset( $ticker_now ) ? (int) $ticker_now : time();
 $ticker_product_id      = isset( $ticker_product_id ) ? (int) $ticker_product_id : 0;
+$ticker_lead            = isset( $ticker_lead ) && '' !== $ticker_lead ? (string) $ticker_lead : __( 'Sale ends in', 'klepsidro' );
+/* translators: %s is the remaining sale time, e.g. "2 hrs 5 min". */
+$ticker_announce = isset( $ticker_announce ) && '' !== $ticker_announce ? (string) $ticker_announce : __( 'Sale ends in %s', 'klepsidro' );
+$ticker_label    = isset( $ticker_label ) && '' !== $ticker_label ? (string) $ticker_label : __( 'Sale countdown', 'klepsidro' );
 
 if ( null === $ticker_end_ts ) {
 	return;
@@ -37,7 +48,7 @@ $ticker_remaining    = max( 0, $ticker_end_ts - $ticker_now );
 $ticker_sweep_deg    = (int) round( ( ( $ticker_remaining % 60 ) / 60 ) * 360 );
 $ticker_show_seconds = 'compact' !== $ticker_format;
 ?>
-<div class="ticker" role="group" aria-label="<?php esc_attr_e( 'Sale countdown', 'klepsidro' ); ?>">
+<div class="ticker" role="group" aria-label="<?php echo esc_attr( $ticker_label ); ?>">
 	<div
 		class="ticker__countdown<?php echo $ticker_is_expired ? ' is-expired' : ''; ?>"
 		data-ticker-end="<?php echo esc_attr( (string) $ticker_end_ts ); ?>"
@@ -71,11 +82,11 @@ $ticker_show_seconds = 'compact' !== $ticker_format;
 			role="status"
 			aria-live="polite"
 			data-ticker-status
-			data-ticker-announce-template="<?php echo esc_attr( /* translators: %s is the remaining sale time, e.g. "2 hrs 5 min". */ __( 'Sale ends in %s', 'klepsidro' ) ); ?>"
+			data-ticker-announce-template="<?php echo esc_attr( $ticker_announce ); ?>"
 		></span>
 
 		<div class="ticker__clock"<?php echo $ticker_is_expired ? ' hidden' : ''; ?>>
-			<span class="ticker__lead"><?php esc_html_e( 'Sale ends in', 'klepsidro' ); ?></span>
+			<span class="ticker__lead"><?php echo esc_html( $ticker_lead ); ?></span>
 			<span class="ticker__units" role="timer" aria-hidden="true">
 				<span class="ticker__unit ticker__unit--days"<?php echo 'dhms' === $ticker_format ? '' : ' hidden'; ?>>
 					<span class="ticker__value" data-ticker-days>--</span>

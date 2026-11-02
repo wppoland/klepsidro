@@ -383,7 +383,36 @@ final class Settings implements HasHooks {
 				?>
 			</form>
 
+			<?php $this->render_companion_cards(); ?>
+
 			<?php $this->pro_upsell()->cards(); ?>
+		</div>
+		<?php
+	}
+
+	/**
+	 * Cross-recommendation card for sister plugins (Propono Checkout Order Bump).
+	 */
+	private function render_companion_cards(): void {
+		$is_bump_active = defined( 'Bump\\VERSION' ) || class_exists( '\\Bump\\Plugin' );
+		?>
+		<div class="card" style="max-width: 800px; margin-top: 24px; padding: 18px 22px;">
+			<h2 class="title" style="margin-top: 0; font-size: 15px;"><?php esc_html_e( 'Complementary integration: Propono - Checkout Order Bump for WooCommerce', 'klepsidro' ); ?></h2>
+			<p style="color: #50575e; line-height: 1.5;">
+				<?php esc_html_e( 'Convert urgency into higher revenue. Once countdown timers motivate buyers to take action, Propono presents an enticing one-click add-on offer right on checkout.', 'klepsidro' ); ?>
+			</p>
+			<?php if ( $is_bump_active ) : ?>
+				<p style="color: #007017; font-weight: 600; margin-bottom: 0;">
+					<span class="dashicons dashicons-yes-alt" style="vertical-align: text-bottom;"></span>
+					<?php esc_html_e( 'Propono - Order Bump is active.', 'klepsidro' ); ?>
+				</p>
+			<?php else : ?>
+				<p style="margin-bottom: 0;">
+					<a href="<?php echo esc_url( admin_url( 'plugin-install.php?s=' . rawurlencode( 'Propono - Checkout Order Bump for WooCommerce' ) . '&tab=search&type=term' ) ); ?>" class="button button-secondary">
+						<?php esc_html_e( 'Explore Propono Order Bump', 'klepsidro' ); ?> &rarr;
+					</a>
+				</p>
+			<?php endif; ?>
 		</div>
 		<?php
 	}

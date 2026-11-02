@@ -1,7 +1,7 @@
-# Ticker
+# Klepsidro
 
-- **Plugin page:** https://plogins.com/ticker/
-- **Documentation:** https://plogins.com/ticker/docs/
+- **Plugin page:** https://plogins.com/klepsidro/
+- **Documentation:** https://plogins.com/klepsidro/docs/
 - **Author:** [WPPoland.com](https://wppoland.com)
 - **WordPress.org contributor:** motylanogha
 - **Source:** https://github.com/wppoland/klepsidro

@@ -109,8 +109,9 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The sale countdown timer on a product page.
-2. The settings page: countdown source, format, and placement.
+1. Sale countdown on a product page.
+2. Settings under WooCommerce > Klepsidro: countdown source, wording and placement.
+3. The countdown on a phone.
 
 == External Services ==
 

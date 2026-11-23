@@ -4,7 +4,7 @@ Tags: woocommerce, countdown, sale, urgency, timer
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -122,6 +122,9 @@ Klepsidro does not connect to any external services. It resolves the countdown e
 Klepsidro is fully translatable and ships the `klepsidro.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.7 =
+* Changed: uninstall no longer loads a core admin file itself; WordPress has already loaded it on that path.
 
 = 1.1.6 =
 * Fixed: deleting the plugin no longer removes settings that an installed add-on keeps in the same option; the plugin deleted last removes them.
